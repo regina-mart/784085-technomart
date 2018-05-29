@@ -1,7 +1,7 @@
 # Личный проект «Техномарт»
 
 * Студент: [Регина Армянинова](https://up.htmlacademy.ru/htmlcss/21/user/784085).
-* Наставник: `Неизвестно`.
+* Наставник: [Дмитрий Варганов] (https://htmlacademy.ru/profile/varganov_d).
 
 ---
 
