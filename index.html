@@ -5,8 +5,304 @@
     <title>HTML Academy: Техномарт</title>
   </head>
   <body>
+    <header class="main-header">
+      <nav class="main-navigation">
+        <a class="main-header-logo">
+          <img scr="#" width="#" height="#" alt="Логотип магазина Техномарт">
+        </a>
+         <ul class="order-navigation">
+           <!-- <li><input type="search" name="q" placeholder="Поиск">
+   <input type="submit" value="Найти"></li> --> Не знаю, как делать поиск, этот пример нашла в интернете
+          <li><a href="#">Закладки</a></li>
+          <li><a href="#">Корзина</a></li>
+          <li><a href="#">Оформить заказ</a></li>
+         </ul>
+         <!-- <section class="info-shop">
+           <p class="description">
+           Интернет-магазин строительных материалов и инструментов для ремонта
+         </p> --> Нужно ли делать перенос с br?
+           <!-- <p class="contacts">
+             <span class="number-shop">+7(812)555-05-55</span>
+             <span class="address-shop">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
+         </section> --> Уместен ли span?
+         <ul class="user-navigation">
+           <li><a href="#">Вход</a></li>
+           <li><a href="#">Регистрация</a></li>
+         </ul>
+         <ul class="site-navigation">
+           <li><a href="#">Главная</a></li>
+           <li><a href="#">Компания</a></li>
+           <li><a href="#">Каталог</a></li>
+           <li><a href="#">Новости</a></li>
+           <li><a href="#">Спецпредложения</a></li>
+           <li><a href="#">Доставка</a></li>
+           <li><a href="#">Контакты</a></li>
+         </ul>
+      </nav>
+    </header>
+    <main class="container">
+      <h1 class="visually-hidden">Магазин Техномарт</h1>
+      <h2 class="visually-hidden">Разделы магазина</h2>
+      <section class="division-catalog">
+        <ul class="division-catalog-list">
+          <li class="division-catalog-item">
+            <h3 class="division-name">Материалы</h3>
+             <!-- <p class="division-catalog-img"> --> Класс
+               <img scr="#"  width="#" height="#" alt="Материалы">
+             </p>
+             <!-- <p class="division-catalog-button"> --> Класс (Кажется белибердой, так как в классах просто меняется орядок слов)
+               <!-- <a class="button-division-catalog" href="#">На любой вкус</a> --> Класс.  Я правильно сделала, что все кнопки разделила на различные классы или везде нужно было писать просто button?
+             </p>
+           </li>
+           <li class="division-catalog-item">
+             <h3 class="division-name">Инструмент</h3>
+             <p class="division-catalog-img">
+                <img scr="#"  width="#" height="#" alt="Инструмент">
+              </p>
+              <p class="division-catalog-button">
+                <a class="button-division-catalog" href="#">На все случаи</a>
+              </p>
+            </li>
+            <li class="division-catalog-item">
+              <h3 class="division-name">Техника</h3>
+               <p class="division-catalog-img">
+                 <img scr="#"  width="#" height="#" alt="Техника">
+               </p>
+               <p class="division-catalog-button">
+                 <a class="button-division-catalog" href="#">Для стройки</a>
+               </p>
+             </li>
+             <li class="division-catalog-item">
+               <h3 class="division-name">Скидки 50%</h3>
+                <p class="division-catalog-img">
+                  <img scr="#"  width="#" height="#" alt="Скидки 50%">
+                </p>
+                <p class="division-catalog-button">
+                  <a class="button-division-catalog" href="#">На 350 товаров</a>
+                </p>
+              </li>
+              <li class="division-catalog-item">
+                <h3 class="division-name">Доставка</h3>
+                 <p class="division-catalog-img">
+                   <img scr="#"  width="#" height="#" alt="Доставка">
+                 </p>
+                 <p class="division-catalog-button">
+                   <a class="button-division-catalog" href="#">Бесплатно</a>
+                 </p>
+               </li>
+             </ul>
+           </section>
+           <!-- Слайдер --> Не знаю, как делать слайдер
+           <!-- <h2 class="caption">Популярные товары:</h2> --> Правильно ли заголовок?
+           <!-- <div class="button-popular-goods" href="#">Все популярные товары</div> --> И эта кнопка
+           <section class="popular-goods">
+             <ul class="popular-goods-list">
+               <li class="popular-goods-item">
+                 <!-- <h4 class="popular-goods-name">Перфоратор BOSH BF 9000</h4> --> Заголовок
+                 <!-- <p class="popular-goods-img"> --> ?
+                   <img scr="#"  width="#" height="#" alt="Перфоратор BOSH BF 9000">
+                 </p>
+                 <p class="popular-goods-prise">
+                 <b class="through">32500 Р.</b>
+                 <!-- <a class="button-popular-goods-item" href="#">25500 Р.</a> --> ?
+               </p>
+             </li>
+             <li class="popular-goods-item">
+               <!-- <h4 class="popular-goods-name">Перфоратор BOSH BFG 3000</h4> -->
+               <p class="popular-goods-img">
+                 <img scr="#"  width="#" height="#" alt="Перфоратор BOSH BF 9000">
+               </p>
+               <p class="popular-goods-prise">
+               <b class="through">22500 Р.</b>
+               <a class="button-popular-goods-item" href="#">15500 Р.</a>
+             </p>
+           </li>
+           <li class="popular-goods-item">
+             <!-- <h4 class="popular-goods-name">Перфоратор BOSH BF 6000</h4> -->
+             <p class="popular-goods-img">
+               <img scr="#"  width="#" height="#" alt="Перфоратор BOSH BF 9000">
+             </p>
+             <p class="popular-goods-prise">
+             <b class="through">30500 Р.</b>
+             <a class="button-popular-goods-item" href="#">25500 Р.</a>
+           </p>
+         </li>
+         <li class="popular-goods-item">
+           <!-- <h4 class="popular-goods-name">Перфоратор BOSH BF 2000</h4> -->
+           <p class="popular-goods-img">
+             <img scr="#"  width="#" height="#" alt="Перфоратор BOSH BF 9000">
+           </p>
+           <p class="popular-goods-prise">
+           <!-- <br> --> Уместно ли?
+           <a class="buttom-popular-goods-item" href="#">12500 Р.</a>
+         </p>
+       </li>
+     </ul>
+    </section>
+    <!-- <h2 class="caption">Популярные производители:</h2> --> ?
+    <!-- <div class="buttom-popular-manufacturer" href="#">Все производители</div> --> ?
+    <section class="popular-manufacturer">
+      <ul class="popular-manufacturer-list">
+        <li class="popular-manufacturer-item">
+          <!-- <p class="popular-manufacturer-img"> -->
+            <a href="#">
+              <img scr="" width="#" height="#" alt="BOSCH">
+            </a>
+          </p>
+        </li>
+        <li class="popular-manufacturer-item">
+          <p class="popular-manufacturer-img">
+            <a href="#">
+              <img scr="" width="#" height="#" alt="Makita">
+            </a>
+          </p>
+        </li>
+        <li class="popular-manufacturer-item">
+          <p class="popular-manufacturer-img">
+            <a href="#">
+              <img scr="" width="#" height="#" alt="DeWALT">
+            </a>
+          </p>
+        </li>
+        <li class="popular-manufacturer-item">
+          <p class="popular-manufacturer-img">
+            <a href="#">
+              <img scr="" width="#" height="#" alt="ИНТЕРСКОЛ">
+            </a>
+          </p>
+        </li>
+        <li class="popular-manufacturer-item">
+          <p class="popular-manufacturer-img">
+            <a href="#">
+              <img scr="" width="#" height="#" alt="HITACHI">
+            </a>
+          </p>
+        </li>
+        <li class="popular-manufacturer-item">
+          <p class="popular-manufacturer-img">
+            <a href="#">
+              <img scr="" width="#" height="#" alt="LG">
+            </a>
+          </p>
+        </li>
+        <li class="popular-manufacturer-item">
+          <p class="popular-manufacturer-img">
+            <a href="#">
+              <img scr="" width="#" height="#" alt="AEG power solutions">
+            </a>
+          </p>
+        </li>
+        <li class="popular-manufacturer-item">
+          <p class="popular-manufacturer-img">
+            <a href="#">
+              <img scr="" width="#" height="#" alt="metabo. work. don'n play.">
+            </a>
+          </p>
+        </li>
+      </ul>
+    </section>
+    <!-- <h2 class="caption">Сервисы</h2> --> ?
+    <section class="service">
+      <p class="specification">
+        Хороший интернет-магазин отличается от плохого не только ценами!<br>
+        Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
+      </p>
+      <!-- Слайдер --> Не знаю, как делать
+    </section>
+    <!-- <h2 class="caption">Компания "Техномарт"</h2> --> ?
+    <section class="about-company">
+      <p class="about-company-text">
+        <!-- <pre>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+        строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
 
-    <p>Репозиторий создан для обучения на интенсивном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">Профессиональный HTML и CSS, уровень 1</a>».</p>
-
-  </body>
+        Мы можем доставить ваш товар в самые отдалённые точки России!
+        Техномарт работает со многими транспортными компаниями:
+      </pre> --> Правильно с pre?
+      <ul class="transport-companies">
+        <!-- <li class="transport-companies-list">Деловые линии</li> --> У всех лишек должен быть класс? А то в примерах, где-то он есть, где-то нет. Например, в навигации нет, только ссылки
+        <li class="transport-companies-list">Автотрейдинг</li>
+        <li class="transport-companies-list">ЖелДорЭкспедиция</li>
+      </ul>
+      <div class="button-about-company" href="#">Подробнее о компании</div>
+    </section>
+    <!-- <h2 class="caption">Контакты</h2> --> ?
+    <section class="contact">
+      <p class="map">
+          Вы можете забрать сами,<br>
+          заехав в наш офис:
+      </p>
+        <p class="map-img">
+          <a href="#">
+            <img scr="#" width="#" height="#" alt="Карта">
+          </a>
+        </p>
+        <div class="button-map-feedback" href="#">Заблудились? Напишите нам!</div>
+      </section>
+    </main>
+      <footer class="main-footer">
+        <div class="logo">
+          <img scr="#" width="#" height="#" alt="Логотип "Техномарт"">
+        </div>
+        <p class="footer-contacts">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+          +7 (812) 555-05-55
+        </p>
+        <nav class="secondary-navigation">
+        <ul class="site-navigation-info">
+          <li><a href="#">Компания</a></li>
+          <li><a href="#">Новости</a></li>
+          <li><a href="#">Каталог</a></li>
+          <li><a href="#">Доставка</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <ul class="site-navigation-goods">
+          <li><a href="#">Материалы</a></li>
+          <li><a href="#"></a>Техника</li>
+          <li><a href="#"></a>Инструмент</li>
+          <li><a href="#">Спецпредложения</a></li>
+        </ul>
+     </nav>
+     <p class="footer-copyright">
+       <!-- (Ц) --> 2010-2017 Компания "Техномарт"<br>
+       Все права защищены
+     </p>
+     <div class="footer-social">
+       <ul class="social">
+         <li><a class="social-button" href="#">Вконтакте</a></li>
+         <li><a class="social-button" href="#">Фейсбук</a></li>
+         <li><a class="social-button" href="#">Инстаграм</a></li>
+       </ul>
+     </div>
+     <p class="feedback">
+       <!-- <span class="white">Обратная связь:</span>
+       <span class="yellow">mail@htmlacademy.ru</span> --> Уместен ли span?
+     </p>
+     <p class="developed-by">
+       <!-- <span class="white">Разработанно --</span>
+       <span class="yellow">htmlacademy.ru</span> --> Уместен ли span?
+       <p>
+  </footer>
+  <!-- Модальное окно --> Не знаю, как делать
+</body>
 </html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
