@@ -7,302 +7,279 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <a class="main-header-logo">
-          <img scr="#" width="#" height="#" alt="Логотип магазина Техномарт">
-        </a>
+        <p class="main-header-logo">Техномарт</p>
          <ul class="order-navigation">
-           <!-- <li><input type="search" name="q" placeholder="Поиск">
-   <input type="submit" value="Найти"></li> --> Не знаю, как делать поиск, этот пример нашла в интернете
-          <li><a href="#">Закладки</a></li>
-          <li><a href="#">Корзина</a></li>
-          <li><a href="#">Оформить заказ</a></li>
+           <li class="product-search"></li>
+           <li class="order-navigation-item"><a class="order-navigation-link" href="#">Закладки</a></li>
+           <li class="order-navigation-item"><a class="order-navigation-link" href="#">Корзина</a></li>
+           <li class="order-navigation-item"><a class="order-navigation-link" href="#">Оформить заказ</a></li>
          </ul>
-         <!-- <section class="info-shop">
-           <p class="description">
-           Интернет-магазин строительных материалов и инструментов для ремонта
-         </p> --> Нужно ли делать перенос с br?
-           <!-- <p class="contacts">
-             <span class="number-shop">+7(812)555-05-55</span>
-             <span class="address-shop">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</span>
-         </section> --> Уместен ли span?
+         <div class="info-shop">
+           <p class="description-shop">
+           Интернет-магазин<br>
+           строительных материалов<br>
+           и инструментов для ремонта
+         </p>
+       </div>
+       <div class="contacts-shop">
+         <p class="number-shop">+7(812)555-05-55</p>
+         <p class="address-shop">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+       </div>
          <ul class="user-navigation">
-           <li><a href="#">Вход</a></li>
-           <li><a href="#">Регистрация</a></li>
+           <li class="user-navigation-item"><a class="user-navigation-link" href="#">Вход</a></li>
+           <li class="user-navigation-item"><a class="user-navigation-link" href="#">Регистрация</a></li>
          </ul>
          <ul class="site-navigation">
-           <li><a href="#">Главная</a></li>
-           <li><a href="#">Компания</a></li>
-           <li><a href="#">Каталог</a></li>
-           <li><a href="#">Новости</a></li>
-           <li><a href="#">Спецпредложения</a></li>
-           <li><a href="#">Доставка</a></li>
-           <li><a href="#">Контакты</a></li>
+           <li class="site-navigation-item"><a class="site-navigation-link">Главная</a></li>
+           <li class="site-navigation-item"><a class="site-navigation-link" href="#">Компания</a></li>
+           <li class="site-navigation-item"><a class="site-navigation-link" href="#">Каталог</a></li>
+           <li class="site-navigation-item"><a class="site-navigation-link" href="#">Новости</a></li>
+           <li class="site-navigation-item"><a class="site-navigation-link" href="#">Спецпредложения</a></li>
+           <li class="site-navigation-item"><a class="site-navigation-link" href="#">Доставка</a></li>
+           <li class="site-navigation-item"><a class="site-navigation-link" href="#">Контакты</a></li>
          </ul>
       </nav>
     </header>
     <main class="container">
-      <h1 class="visually-hidden">Магазин Техномарт</h1>
-      <h2 class="visually-hidden">Разделы магазина</h2>
+     <h1 class="visually-hidden">Магазин Техномарт</h1>
       <section class="division-catalog">
-        <ul class="division-catalog-list">
+        <h2 class="visually-hidden">Разделы магазина</h2>
+         <ul class="division-catalog-list">
           <li class="division-catalog-item">
             <h3 class="division-name">Материалы</h3>
-             <!-- <p class="division-catalog-img"> --> Класс
-               <img scr="#"  width="#" height="#" alt="Материалы">
+             <p class="division-catalog-image-wrapper">
+               <img class="catalog-image-wrapper" scr="200"  width="200" height="#" alt="Материалы">
              </p>
-             <!-- <p class="division-catalog-button"> --> Класс (Кажется белибердой, так как в классах просто меняется орядок слов)
-               <!-- <a class="button-division-catalog" href="#">На любой вкус</a> --> Класс.  Я правильно сделала, что все кнопки разделила на различные классы или везде нужно было писать просто button?
-             </p>
+              <a class="btn" class="button-division-catalog-wrapper" href="#">На любой вкус</a>
            </li>
            <li class="division-catalog-item">
              <h3 class="division-name">Инструмент</h3>
-             <p class="division-catalog-img">
-                <img scr="#"  width="#" height="#" alt="Инструмент">
+             <p class="division-catalog-image-wrapper">
+                <img class="catalog-image-wrapper" scr="200"  width="200" height="#" alt="Инструмент">
               </p>
-              <p class="division-catalog-button">
-                <a class="button-division-catalog" href="#">На все случаи</a>
-              </p>
+                <a class="btn" class="button-division-catalog-wrapper" href="#">На все случаи</a>
             </li>
             <li class="division-catalog-item">
               <h3 class="division-name">Техника</h3>
-               <p class="division-catalog-img">
-                 <img scr="#"  width="#" height="#" alt="Техника">
+               <p class="division-catalog-image-wrapper">
+                 <img class="catalog-image-wrapper" scr="200"  width="200" height="#" alt="Техника">
                </p>
-               <p class="division-catalog-button">
-                 <a class="button-division-catalog" href="#">Для стройки</a>
-               </p>
+                 <a class="btn" class="button-division-catalog-wrapper" href="#">Для стройки</a>
              </li>
              <li class="division-catalog-item">
                <h3 class="division-name">Скидки 50%</h3>
-                <p class="division-catalog-img">
-                  <img scr="#"  width="#" height="#" alt="Скидки 50%">
+                <p class="division-catalog-image-wrapper">
+                  <img class="catalog-image-wrapper" scr="200"  width="200" height="#" alt="Скидки 50%">
                 </p>
-                <p class="division-catalog-button">
-                  <a class="button-division-catalog" href="#">На 350 товаров</a>
-                </p>
+                  <a class="btn" class="button-division-catalog-wrapper" href="#">На 350 товаров</a>
               </li>
               <li class="division-catalog-item">
                 <h3 class="division-name">Доставка</h3>
-                 <p class="division-catalog-img">
-                   <img scr="#"  width="#" height="#" alt="Доставка">
+                 <p class="division-catalog-image-wrapper">
+                   <img class="catalog-image-wrapper" scr="200"  width="200" height="#" alt="Доставка">
                  </p>
-                 <p class="division-catalog-button">
-                   <a class="button-division-catalog" href="#">Бесплатно</a>
-                 </p>
+                   <a class="btn" class="button-division-catalog-wrapper" href="#">Бесплатно</a>
                </li>
              </ul>
            </section>
-           <!-- Слайдер --> Не знаю, как делать слайдер
-           <!-- <h2 class="caption">Популярные товары:</h2> --> Правильно ли заголовок?
-           <!-- <div class="button-popular-goods" href="#">Все популярные товары</div> --> И эта кнопка
-           <section class="popular-goods">
-             <ul class="popular-goods-list">
-               <li class="popular-goods-item">
-                 <!-- <h4 class="popular-goods-name">Перфоратор BOSH BF 9000</h4> --> Заголовок
-                 <!-- <p class="popular-goods-img"> --> ?
-                   <img scr="#"  width="#" height="#" alt="Перфоратор BOSH BF 9000">
+           <!-- Слайдер -->
+           <h2 class="second-caption">Популярные товары:</h2>
+            <a class="btn" class="button-goods" href="#">Все популярные товары</a>
+             <section class="goods-block">
+              <ul class="goods-block-list">
+               <li class="goods-block-item">
+                 <h4 class="goods-block-name">Перфоратор BOSH BF 9000</h4>
+                  <p class="goods-block-image-wrapper">
+                   <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BF 9000">
                  </p>
-                 <p class="popular-goods-prise">
-                 <b class="through">32500 Р.</b>
-                 <!-- <a class="button-popular-goods-item" href="#">25500 Р.</a> --> ?
+                 <p class="prise">
+                  <b class="through-price">32500 Р.</b>
+                   <a class="btn" class="button-goods-item" href="#">25500 Р.</a>
+                 </p>
+               </li>
+             <li class="goods-block-item">
+              <h4 class="goods-block-name">Перфоратор BOSH BFG 3000</h4>
+               <p class="goods-block-image-wrapper">
+                 <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BFG 3000">
                </p>
-             </li>
-             <li class="popular-goods-item">
-               <!-- <h4 class="popular-goods-name">Перфоратор BOSH BFG 3000</h4> -->
-               <p class="popular-goods-img">
-                 <img scr="#"  width="#" height="#" alt="Перфоратор BOSH BF 9000">
-               </p>
-               <p class="popular-goods-prise">
-               <b class="through">22500 Р.</b>
-               <a class="button-popular-goods-item" href="#">15500 Р.</a>
+               <p class="prise">
+               <b class="through-prise">22500 Р.</b>
+               <a class="btn" class="button-goods-item" href="#">15500 Р.</a>
              </p>
            </li>
-           <li class="popular-goods-item">
-             <!-- <h4 class="popular-goods-name">Перфоратор BOSH BF 6000</h4> -->
-             <p class="popular-goods-img">
-               <img scr="#"  width="#" height="#" alt="Перфоратор BOSH BF 9000">
+           <li class="goods-block-item">
+             <h4 class="goods-block-name">Перфоратор BOSH BF 6000</h4>
+             <p class="goods-block-image-wrapper">
+               <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BF 6000">
              </p>
-             <p class="popular-goods-prise">
-             <b class="through">30500 Р.</b>
-             <a class="button-popular-goods-item" href="#">25500 Р.</a>
+             <p class="prise">
+             <b class="through-prise">30500 Р.</b>
+             <a class="btn" class="button-goods-item" href="#">25500 Р.</a>
            </p>
          </li>
-         <li class="popular-goods-item">
-           <!-- <h4 class="popular-goods-name">Перфоратор BOSH BF 2000</h4> -->
-           <p class="popular-goods-img">
-             <img scr="#"  width="#" height="#" alt="Перфоратор BOSH BF 9000">
+         <li class="goods-block-item">
+           <h4 class="goods-block-name">Перфоратор BOSH BF 2000</h4>
+           <p class="goods-block-image-wrapper">
+             <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BF 2000">
            </p>
-           <p class="popular-goods-prise">
-           <!-- <br> --> Уместно ли?
-           <a class="buttom-popular-goods-item" href="#">12500 Р.</a>
+           <p class="prise">
+           <br> <!-- Уместно ли? -->
+           <a class="btn" class="buttom-goods-item" href="#">12500 Р.</a>
          </p>
        </li>
      </ul>
     </section>
-    <!-- <h2 class="caption">Популярные производители:</h2> --> ?
-    <!-- <div class="buttom-popular-manufacturer" href="#">Все производители</div> --> ?
-    <section class="popular-manufacturer">
-      <ul class="popular-manufacturer-list">
-        <li class="popular-manufacturer-item">
-          <!-- <p class="popular-manufacturer-img"> -->
-            <a href="#">
-              <img scr="" width="#" height="#" alt="BOSCH">
-            </a>
+    <h2 class="second-caption">Популярные производители:</h2>
+     <a class="btn" class="buttom-manufacturer" href="#">Все производители</a>
+      <section class="manufacturer-block">
+       <ul class="manufacturer-block-list">
+        <li class="manufacturer-block-item">
+         <a class="manufacturer-block-item-link" href="#">
+          <p class="manufacturer-block-image-wrapper">
+              <img class="manufacturer-image-wrapper" scr="#" width="200" height="200" alt="BOSCH">
           </p>
+        </a>
+       </li>
+        <li class="manufacturer-block-item">
+          <a class="manufacturer-block-item-link" href="#">
+           <p class="manufacturer-block-image-wrapper">
+              <img class="manufacturer-image-wrapper" scr="" width="200" height="200" alt="Makita">
+          </p>
+         </a>
         </li>
-        <li class="popular-manufacturer-item">
-          <p class="popular-manufacturer-img">
-            <a href="#">
-              <img scr="" width="#" height="#" alt="Makita">
-            </a>
-          </p>
+        <li class="manufacturer-block-item">
+          <a class="manufacturer-block-item-link" href="#">
+           <p class="manufacturer-block-image-wrapper">
+              <img class="manufacturer-image-wrapper" scr="" width="200" height="200" alt="DeWALT">
+           </p>
+          </a>
         </li>
-        <li class="popular-manufacturer-item">
-          <p class="popular-manufacturer-img">
-            <a href="#">
-              <img scr="" width="#" height="#" alt="DeWALT">
-            </a>
-          </p>
+        <li class="manufacturer-block-item">
+          <a class="manufacturer-block-item-link" href="#">
+           <p class="manufacturer-block-image-wrapper">
+              <img class="manufacturer-image-wrapper" scr="" width="200" height="200" alt="ИНТЕРСКОЛ">
+           </p>
+          </a>
         </li>
-        <li class="popular-manufacturer-item">
-          <p class="popular-manufacturer-img">
-            <a href="#">
-              <img scr="" width="#" height="#" alt="ИНТЕРСКОЛ">
-            </a>
+        <li class="manufacturer-block-item">
+          <a class="manufacturer-block-item-link" href="#">
+           <p class="manufacturer-block-image-wrapper">
+              <img class="manufacturer-image-wrapper" scr="" width="200" height="200" alt="HITACHI">
           </p>
+         </a>
         </li>
-        <li class="popular-manufacturer-item">
-          <p class="popular-manufacturer-img">
-            <a href="#">
-              <img scr="" width="#" height="#" alt="HITACHI">
-            </a>
-          </p>
+        <li class="manufacturer-block-item">
+          <a class="manufacturer-block-item-link" href="#">
+           <p class="manufacturer-block-image-wrapper">
+              <img class="manufacturer-image-wrapper" scr="" width="200" height="200" alt="LG">
+           </p>
+         </a>
         </li>
-        <li class="popular-manufacturer-item">
-          <p class="popular-manufacturer-img">
-            <a href="#">
-              <img scr="" width="#" height="#" alt="LG">
-            </a>
-          </p>
+        <li class="manufacturer-block-item">
+          <a class="manufacturer-block-item-link" href="#">
+           <p class="manufacturer-block-image-wrapper">
+              <img class="manufacturer-image-wrapper" scr="" width="200" height="200" alt="AEG power solutions">
+           </p>
+         </a>
         </li>
-        <li class="popular-manufacturer-item">
-          <p class="popular-manufacturer-img">
-            <a href="#">
-              <img scr="" width="#" height="#" alt="AEG power solutions">
-            </a>
-          </p>
-        </li>
-        <li class="popular-manufacturer-item">
-          <p class="popular-manufacturer-img">
-            <a href="#">
-              <img scr="" width="#" height="#" alt="metabo. work. don'n play.">
-            </a>
-          </p>
+        <li class="manufacturer-block-item">
+          <a class="manufacturer-block-item-link" href="#">
+           <p class="manufacturer-block-image-wrapper">
+              <img class="manufacturer-image-wrapper" scr="" width="200" height="200" alt="metabo. work. don'n play.">
+           </p>
+         </a>
         </li>
       </ul>
     </section>
-    <!-- <h2 class="caption">Сервисы</h2> --> ?
-    <section class="service">
-      <p class="specification">
-        Хороший интернет-магазин отличается от плохого не только ценами!<br>
+    <h2 class="second-caption">Сервисы</h2>
+     <section class="service-info">
+      <p class="specification-text">
+        Хороший интернет-магазин отличается от плохого не только ценами!
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
-      <!-- Слайдер --> Не знаю, как делать
+      <!-- Слайдер -->
     </section>
-    <!-- <h2 class="caption">Компания "Техномарт"</h2> --> ?
-    <section class="about-company">
+    <h2 class="second-caption">Компания "Техномарт"</h2>
+     <section class="about-company">
       <p class="about-company-text">
-        <!-- <pre>Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
+        Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
         строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
-
+      </p>
+      <p class="about-company-text">
         Мы можем доставить ваш товар в самые отдалённые точки России!
         Техномарт работает со многими транспортными компаниями:
-      </pre> --> Правильно с pre?
-      <ul class="transport-companies">
-        <!-- <li class="transport-companies-list">Деловые линии</li> --> У всех лишек должен быть класс? А то в примерах, где-то он есть, где-то нет. Например, в навигации нет, только ссылки
-        <li class="transport-companies-list">Автотрейдинг</li>
-        <li class="transport-companies-list">ЖелДорЭкспедиция</li>
+      </p>
+      <ul class="transport-companies-list">
+        <li class="transport-companies-item">Деловые линии</li>
+        <li class="transport-companies-item">Автотрейдинг</li>
+        <li class="transport-companies-item">ЖелДорЭкспедиция</li>
       </ul>
-      <div class="button-about-company" href="#">Подробнее о компании</div>
+      <a class="btn" class="button-about-company" href="#">Подробнее о компании</a>
     </section>
-    <!-- <h2 class="caption">Контакты</h2> --> ?
-    <section class="contact">
-      <p class="map">
-          Вы можете забрать сами,<br>
+    <h2 class="second-caption">Контакты</h2>
+     <section class="contact-info">
+      <p class="map-location">
+          Вы можете забрать сами,
           заехав в наш офис:
       </p>
-        <p class="map-img">
-          <a href="#">
-            <img scr="#" width="#" height="#" alt="Карта">
-          </a>
+       <a class="map-image-location-link" href="#">
+        <p class="map-image-location">
+            <img class="map-image"scr="#" width="200" height="200" alt="Карта">
         </p>
-        <div class="button-map-feedback" href="#">Заблудились? Напишите нам!</div>
+      </a>
+        <a class="btn" class="button-map-feedback" href="#">Заблудились? Напишите нам!</a>
       </section>
     </main>
       <footer class="main-footer">
-        <div class="logo">
-          <img scr="#" width="#" height="#" alt="Логотип "Техномарт"">
-        </div>
-        <p class="footer-contacts">
-          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8<br>
+        <p class="logo">Техномарт</p>
+         <p class="footer-contacts">
+          г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
           +7 (812) 555-05-55
         </p>
-        <nav class="secondary-navigation">
+      <nav class="secondary-navigation">
         <ul class="site-navigation-info">
-          <li><a href="#">Компания</a></li>
-          <li><a href="#">Новости</a></li>
-          <li><a href="#">Каталог</a></li>
-          <li><a href="#">Доставка</a></li>
-          <li><a href="#">Контакты</a></li>
+          <li class="site-navigation-info-item"><a class="site-navigation-info-link" href="#">Компания</a></li>
+          <li class="site-navigation-info-item"><a class="site-navigation-info-link" href="#">Новости</a></li>
+          <li class="site-navigation-info-item"><a class="site-navigation-info-link" href="#">Каталог</a></li>
+          <li class="site-navigation-info-item"><a class="site-navigation-info-link" href="#">Доставка</a></li>
+          <li class="site-navigation-info-item"><a class="site-navigation-info-link" href="#">Контакты</a></li>
         </ul>
         <ul class="site-navigation-goods">
-          <li><a href="#">Материалы</a></li>
-          <li><a href="#"></a>Техника</li>
-          <li><a href="#"></a>Инструмент</li>
-          <li><a href="#">Спецпредложения</a></li>
+          <li class="site-navigation-goods-item"><a class="site-navigation-goods-link" href="#">Материалы</a></li>
+          <li class="site-navigation-goods-item"><a class="site-navigation-goods-link" href="#"></a>Техника</li>
+          <li class="site-navigation-goods-item"><a class="site-navigation-goods-link" href="#"></a>Инструмент</li>
+          <li class="site-navigation-goods-item"><a class="site-navigation-goods-link" href="#">Спецпредложения</a></li>
         </ul>
      </nav>
      <p class="footer-copyright">
-       <!-- (Ц) --> 2010-2017 Компания "Техномарт"<br>
+       &copy; 2010-2017 Компания "Техномарт"
        Все права защищены
      </p>
      <div class="footer-social">
-       <ul class="social">
-         <li><a class="social-button" href="#">Вконтакте</a></li>
-         <li><a class="social-button" href="#">Фейсбук</a></li>
-         <li><a class="social-button" href="#">Инстаграм</a></li>
+       <ul class="social-list">
+         <li class="social-item"><a class="btn" class="social-button" href="#">Вконтакте</a></li>
+         <li class="social-item"><a class="btn" class="social-button" href="#">Фейсбук</a></li>
+         <li class="social-item"><a class="btn" class="social-button" href="#">Инстаграм</a></li>
        </ul>
      </div>
-     <p class="feedback">
-       <!-- <span class="white">Обратная связь:</span>
-       <span class="yellow">mail@htmlacademy.ru</span> --> Уместен ли span?
+     <p class="feedback-info">
+       Обратная связь:
+       <span class="yellow-text">mail@htmlacademy.ru</span>
      </p>
      <p class="developed-by">
-       <!-- <span class="white">Разработанно --</span>
-       <span class="yellow">htmlacademy.ru</span> --> Уместен ли span?
-       <p>
+       Разработанно --
+       <span class="yellow-text">htmlacademy.ru</span>
+     </p>
   </footer>
-  <!-- Модальное окно --> Не знаю, как делать
+  <section class="modal modal-login">
+    <h5 class="modal-caption">Ваше имя:</h5>
+    <!-- Здесь будет форма -->
+    <h5 class="modal-caption">Ваш e-mail:</h5>
+    <!-- Здесь будет форма -->
+    <h5 class="modal-caption">Текст письма</h5>
+    <!-- Здесь будет форма -->
+    <div class="btn" class="button-modal">Отправить</div>
+    <span class="modal-close">x</span>
+  </section>
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  
