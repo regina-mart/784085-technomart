@@ -7,7 +7,9 @@
   <body>
     <header class="main-header">
       <nav class="main-navigation">
-        <p class="main-header-logo">Техномарт</p>
+        <a class="main-header-logo">
+          <h2 class="header-logo">Техномарт</h2>
+        </a>
          <ul class="order-navigation">
            <li class="product-search">
             <form action="/echo" method="post">
@@ -52,28 +54,26 @@
          <ul class="catalog-list">
           <li class="catalog-item">
             <h3 class="catalog-name">Материалы</h3>
-             <p class="catalog-image-wrapper">
-               <img class="catalog-image" scr="#"  width="200" height="200" alt="Материалы"> <!-- Здесь image или псевдоэлемент? -->
-             </p>
-              <a class="btn button-catalog" href="#">На любой вкус</a>
+             <!-- что-то я запуталась
+             когда вставлять псевдоэлемент в разделах, после материалов или после кнопки? -->
+              <a class="btn catalog-button" href="#">На любой вкус</a>
            </li>
            <li class="catalog-item">
              <h3 class="catalog-name">Инструмент</h3>
              <p class="catalog-image-wrapper">
                 <img class="catalog-image" scr="#"  width="200" height="200" alt="Инструмент">
               </p>
-                <a class="btn button-catalog" href="#">На все случаи</a>
+                <a class="btn catalog-button" href="#">На все случаи</a>
             </li>
             <li class="catalog-item">
               <h3 class="catalog-name">Техника</h3>
                <p class="catalog-image-wrapper">
                  <img class="catalog-image" scr="#"  width="200" height="200" alt="Техника">
                </p>
-                 <a class="btn button-catalog" href="#">Для стройки</a>
+                 <a class="btn catalog-button" href="#">Для стройки</a>
              </li>
            </ul>
-           <ul class="catalog-slider">
-             <figure class="catalog-goods-slider">
+             <figure class="catalog-slider"> <!-- Здесь нужно оборачивать в div? -->
                <div class="catalog-slider-one">
                  <img class="catalog-slider-one-image" src="#" width="200" height="200" alt="Перфораторы">
                   <p class="catalog-slider-one-text-name">Перфораторы</p>
@@ -86,34 +86,35 @@
                 </div>
                 <a class="btn button-catalog-slider" href="#">Открыть каталог</a>
               </figure>
-            </ul>
             <ul class="catalog-list">
              <li class="catalog-item">
                <h3 class="catalog-name">Скидки 50%</h3>
                 <p class="catalog-image-wrapper">
                   <img class="catalog-image" scr="#"  width="200" height="200" alt="Скидки 50%">
                 </p>
-                  <a class="btn button-catalog" href="#">На 350 товаров</a>
+                  <a class="btn catalog-button" href="#">На 350 товаров</a>
               </li>
               <li class="catalog-item">
                 <h3 class="catalog-name">Доставка</h3>
                  <p class="catalog-image-wrapper">
                    <img class="catalog-image" scr="#"  width="200" height="200" alt="Доставка">
                  </p>
-                   <a class="btn button-catalog" href="#">Бесплатно</a>
+                   <a class="btn catalog-button" href="#">Бесплатно</a>
                </li>
              </ul>
            </section>
+           <div>
            <h2 class="second-caption">Популярные товары:</h2>
             <a class="btn button-goods" href="#">Все популярные товары</a>
+          </div>
              <section class="goods-block">
               <ul class="goods-block-list">
                <li class="goods-block-item">
                  <h4 class="goods-block-name">Перфоратор BOSH BF 9000</h4>
-                  <p class="goods-block-image-wrapper">
+                  <p class="goods-block-image-wrapper"> <!-- а здесь p нужен или картинки вообще никогда не надо ни во что оборачивать, кроме ссылок, если они нужны? -->
                    <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BF 9000">
                  </p>
-                 <p class="price">
+                 <p class="price-goods">
                   <b class="through-price">32500 Р.</b>
                    <a class="btn button-goods-item" href="#">25500 Р.</a>
                  </p>
@@ -123,7 +124,7 @@
                <p class="goods-block-image-wrapper">
                  <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BFG 3000">
                </p>
-               <p class="price">
+               <p class="price-goods">
                <b class="through-price">22500 Р.</b>
                <a class="btn button-goods-item" href="#">15500 Р.</a>
              </p>
@@ -133,7 +134,7 @@
              <p class="goods-block-image-wrapper">
                <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BF 6000">
              </p>
-             <p class="price">
+             <p class="price-goods">
              <b class="through-price">30500 Р.</b>
              <a class="btn button-goods-item" href="#">25500 Р.</a>
            </p>
@@ -143,70 +144,56 @@
            <p class="goods-block-image-wrapper">
              <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BF 2000">
            </p>
-           <p class="price">
+           <p class="price-goods">
            <a class="btn buttom-goods-item" href="#">12500 Р.</a>
          </p>
        </li>
      </ul>
     </section>
+    <div>
     <h2 class="second-caption">Популярные производители:</h2>
      <a class="btn button-manufacturer" href="#">Все производители</a>
+   </div>
       <section class="manufacturer-block">
        <ul class="manufacturer-block-list">
         <li class="manufacturer-block-item">
          <a class="manufacturer-block-item-link" href="#">
-          <p class="manufacturer-block-image-wrapper">
               <img class="manufacturer-image-wrapper" scr="#" width="200" height="200" alt="BOSCH">
-          </p>
         </a>
        </li>
         <li class="manufacturer-block-item">
           <a class="manufacturer-block-item-link" href="#">
-           <p class="manufacturer-block-image-wrapper">
               <img class="manufacturer-image-wrapper" scr=#"" width="200" height="200" alt="Makita">
-          </p>
          </a>
         </li>
         <li class="manufacturer-block-item">
           <a class="manufacturer-block-item-link" href="#">
-           <p class="manufacturer-block-image-wrapper">
               <img class="manufacturer-image-wrapper" scr="#" width="200" height="200" alt="DeWALT">
-           </p>
           </a>
         </li>
         <li class="manufacturer-block-item">
           <a class="manufacturer-block-item-link" href="#">
-           <p class="manufacturer-block-image-wrapper">
               <img class="manufacturer-image-wrapper" scr="#" width="200" height="200" alt="ИНТЕРСКОЛ">
-           </p>
           </a>
         </li>
         <li class="manufacturer-block-item">
           <a class="manufacturer-block-item-link" href="#">
-           <p class="manufacturer-block-image-wrapper">
               <img class="manufacturer-image-wrapper" scr="#" width="200" height="200" alt="HITACHI">
-          </p>
          </a>
         </li>
         <li class="manufacturer-block-item">
           <a class="manufacturer-block-item-link" href="#">
-           <p class="manufacturer-block-image-wrapper">
               <img class="manufacturer-image-wrapper" scr="#" width="200" height="200" alt="LG">
-           </p>
          </a>
         </li>
         <li class="manufacturer-block-item">
           <a class="manufacturer-block-item-link" href="#">
-           <p class="manufacturer-block-image-wrapper">
               <img class="manufacturer-image-wrapper" scr="#" width="200" height="200" alt="AEG power solutions">
-           </p>
          </a>
         </li>
         <li class="manufacturer-block-item">
           <a class="manufacturer-block-item-link" href="#">
-           <p class="manufacturer-block-image-wrapper">
               <img class="manufacturer-image-wrapper" scr="#" width="200" height="200" alt="metabo. work. don'n play.">
-           </p>
          </a>
         </li>
       </ul>
@@ -217,7 +204,7 @@
         Хороший интернет-магазин отличается от плохого не только ценами!
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
-      <ul class="service-slider">
+      <div class="service-slider">
         <figure class="service-slider-item">
           <div class="service-slider-delivery">
             <a class="btn slider-delivery-button" href=#>Доставка</a>
@@ -244,8 +231,9 @@
                  <a class="btn service-credit-button" href="#">Отправить заявку</a>
            </div>
          </figure>
-       </ul>
+       </div>
      </section>
+     <div class="about-company-block">
      <section class="about-company">
       <h2 class="second-caption">Компания "Техномарт"</h2>
        <p class="about-company-text">
@@ -263,7 +251,8 @@
        </ul>
        <a class="btn button-about-company" href="#">Подробнее о компании</a>
      </section>
-     <section class="contact-info">
+   </div>
+     <div class="contact-info">
       <h2 class="second-caption">Контакты</h2>
        <p class="map-location">
            Вы можете забрать сами,
@@ -275,10 +264,14 @@
          </p>
        </a>
          <a class="btn button-map-feedback" href="#">Заблудились? Напишите нам!</a>
-       </section>
+       </div>
      </main>
        <footer class="main-footer">
-         <p class="logo-footer">Техномарт</p>
+         <div class="logo-footer-item">
+         <a class="logo-footer-link">
+           <h2 class="logo-footer">Техномарт</h2>
+         </a>
+       </div>
          <nav class="secondary-navigation">
            <ul class="secondary-navigation-info-list">
              <li class="site-navigation-info-item"><a class="site-navigation-info-link" href="#">Компания</a></li>
@@ -288,11 +281,13 @@
              <li class="site-navigation-info-item"><a class="site-navigation-info-link" href="#">Контакты</a></li>
            </ul>
          </nav>
+         <div class="footer-contact-item">
           <p class="footer-contacts">
            г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
            +7 (812) 555-05-55
          </p>
-        <nav class="site-navigation-goods">
+       </div>
+        <nav class="site-navigation-goods"> <!-- и здесь нужна обертка? -->
          <ul class="site-navigation-goods-list">
            <li class="site-navigation-goods-item"><a class="site-navigation-goods-link" href="#">Материалы</a></li>
            <li class="site-navigation-goods-item"><a class="site-navigation-goods-link" href="#"></a>Техника</li>
@@ -300,6 +295,7 @@
            <li class="site-navigation-goods-item"><a class="site-navigation-goods-link" href="#">Спецпредложения</a></li>
          </ul>
       </nav>
+      <div class="footer-copyright-item">
       <p class="footer-copyright">
         &copy; 2010-2017 Компания "Техномарт"
         Все права защищены
@@ -319,7 +315,9 @@
         Разработанно --
         <span class="yellow-text">htmlacademy.ru</span>
       </p>
+    </div>
    </footer>
+   <!-- это здесь меня сюрприз ждет?)) -->
    <section class="modal modal-login">
      <form action="/echo" method="post">
        <div class="half-width">
