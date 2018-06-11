@@ -54,8 +54,6 @@
          <ul class="catalog-list">
           <li class="catalog-item">
             <h3 class="catalog-name">Материалы</h3>
-             <!-- что-то я запуталась
-             когда вставлять псевдоэлемент в разделах, после материалов или после кнопки? -->
               <a class="btn catalog-button" href="#">На любой вкус</a>
            </li>
            <li class="catalog-item">
@@ -73,7 +71,7 @@
                  <a class="btn catalog-button" href="#">Для стройки</a>
              </li>
            </ul>
-             <figure class="catalog-slider"> <!-- Здесь нужно оборачивать в div? -->
+             <figure class="catalog-slider">
                <div class="catalog-slider-one">
                  <img class="catalog-slider-one-image" src="#" width="200" height="200" alt="Перфораторы">
                   <p class="catalog-slider-one-text-name">Перфораторы</p>
@@ -103,7 +101,7 @@
                </li>
              </ul>
            </section>
-           <div>
+           <div class="goods-division">
            <h2 class="second-caption">Популярные товары:</h2>
             <a class="btn button-goods" href="#">Все популярные товары</a>
           </div>
@@ -111,9 +109,7 @@
               <ul class="goods-block-list">
                <li class="goods-block-item">
                  <h4 class="goods-block-name">Перфоратор BOSH BF 9000</h4>
-                  <p class="goods-block-image-wrapper"> <!-- а здесь p нужен или картинки вообще никогда не надо ни во что оборачивать, кроме ссылок, если они нужны? -->
                    <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BF 9000">
-                 </p>
                  <p class="price-goods">
                   <b class="through-price">32500 Р.</b>
                    <a class="btn button-goods-item" href="#">25500 Р.</a>
@@ -121,9 +117,7 @@
                </li>
              <li class="goods-block-item">
               <h4 class="goods-block-name">Перфоратор BOSH BFG 3000</h4>
-               <p class="goods-block-image-wrapper">
                  <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BFG 3000">
-               </p>
                <p class="price-goods">
                <b class="through-price">22500 Р.</b>
                <a class="btn button-goods-item" href="#">15500 Р.</a>
@@ -131,9 +125,7 @@
            </li>
            <li class="goods-block-item">
              <h4 class="goods-block-name">Перфоратор BOSH BF 6000</h4>
-             <p class="goods-block-image-wrapper">
                <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BF 6000">
-             </p>
              <p class="price-goods">
              <b class="through-price">30500 Р.</b>
              <a class="btn button-goods-item" href="#">25500 Р.</a>
@@ -141,16 +133,14 @@
          </li>
          <li class="goods-block-item">
            <h4 class="goods-block-name">Перфоратор BOSH BF 2000</h4>
-           <p class="goods-block-image-wrapper">
              <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BF 2000">
-           </p>
            <p class="price-goods">
            <a class="btn buttom-goods-item" href="#">12500 Р.</a>
          </p>
        </li>
      </ul>
     </section>
-    <div>
+    <div class="manufacturer-division">
     <h2 class="second-caption">Популярные производители:</h2>
      <a class="btn button-manufacturer" href="#">Все производители</a>
    </div>
@@ -287,7 +277,7 @@
            +7 (812) 555-05-55
          </p>
        </div>
-        <nav class="site-navigation-goods"> <!-- и здесь нужна обертка? -->
+        <nav class="site-navigation-goods">
          <ul class="site-navigation-goods-list">
            <li class="site-navigation-goods-item"><a class="site-navigation-goods-link" href="#">Материалы</a></li>
            <li class="site-navigation-goods-item"><a class="site-navigation-goods-link" href="#"></a>Техника</li>
@@ -317,7 +307,6 @@
       </p>
     </div>
    </footer>
-   <!-- это здесь меня сюрприз ждет?)) -->
    <section class="modal modal-login">
      <form action="/echo" method="post">
        <div class="half-width">
@@ -328,12 +317,12 @@
          <label for="email">Ваш e-mail:</label>
          <input type="email" name="email" id="email" placeholder="email@example.com">
        </div>
-       <label for="text-letter">Текст письма:</label> <!-- Нужен див? -->
-       <textarea name="text-letter" id="text-letter" rows="6" placeholder="В свободной форме"></textarea> <!-- Просто тег закрывается? -->
+       <label for="text-letter">Текст письма:</label>
+       <textarea name="text-letter" id="text-letter" rows="6" placeholder="В свободной форме"></textarea> 
      <div class="buttons">
        <input type="submit" value="Отправить">
      </div>
-     <span class="modal-close">x</span> <!-- ? -->
+     <span class="modal-close">x</span>
    </form>
    </section>
  </body>
