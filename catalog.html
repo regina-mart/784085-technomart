@@ -30,7 +30,7 @@
            <a class="account-link" href="#">Равшан Джамшутович</a>
         </li>
         <li class="account-item">
-          <a class="account-icon-link">Выйти</a> <!-- без href? -->
+          <a class="account-icon-link">Выйти</a> 
         </li>
       </ul>
        <ul class="user-navigation-list">
@@ -83,7 +83,7 @@
            <div class="food-goods-list">
              <h3 class="food-caption">Питание</h3>
              <input type="radio" name="food" id="battery" value="battery">
-               <label for="battery">Аккумуляторные</label> <!-- правильно ли тут label использовать и id к input? -->
+               <label for="battery">Аккумуляторные</label>
              <input type="radio" name="food"  id="net" value="net">
                <label for="net">Сетевые</label>
            </div>
@@ -92,27 +92,27 @@
            </div>
          </form>
       </section>
-     <section class="sorting-block">
-      <ul class="sorting-list">
-        <li class="sorting-item">
-          <a class="sorting-item-link" href="#">По цене</a>
-        </li>
-        <li class="sorting-item">
-         <a class="sorting-item-link" href="#">По типу</a>
-       </li>
-       <li class="sorting-item">
-         <a class="sorting-item-link" href="#">По функционалу</a>
-       </li>
-       <li class="sorting-item">
-        <a class="sorting-item-link sorting-arrow sorting-arrow-top" href="#">По возрастанию</a>
-       </li>
-       <li class="sorting-item">
-        <a class="sorting-item-link sorting-arrow sorting-arrow-bottom" href="#">По убыванию</a>
-       </li>
-     </ul>
-   </section>
  </div>
     <section class="goods-block">
+      <div class="sorting-block">
+       <ul class="sorting-list">
+         <li class="sorting-item">
+           <a class="sorting-item-link" href="#">По цене</a>
+         </li>
+         <li class="sorting-item">
+          <a class="sorting-item-link" href="#">По типу</a>
+        </li>
+        <li class="sorting-item">
+          <a class="sorting-item-link" href="#">По функционалу</a>
+        </li>
+        <li class="sorting-item">
+         <a class="sorting-item-link sorting-arrow sorting-arrow-top" href="#">По возрастанию</a>
+        </li>
+        <li class="sorting-item">
+         <a class="sorting-item-link sorting-arrow sorting-arrow-bottom" href="#">По убыванию</a>
+        </li>
+      </ul>
+    </div>
      <ul class="goods-block-list">
       <li class="goods-block-item">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 3000</h3>
@@ -133,9 +133,9 @@
       <li class="goods-block-item">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 2000</h3>
           <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BFG 2000">
-        <div class="invisible-block"> <!-- так вообще можно? -->
+        <div class="invisible-block">
           <a class="buy-goods" href="#">Купить</a>
-          <a class="to-bookmarks">В закладки</a> <!-- это по идее кнопка? -->
+          <a class="to-bookmarks">В закладки</a>
         </div>
         <p class="price-goods">
           <a class="btn button-goods-item" href="#">12500 Р.</a>
@@ -225,7 +225,7 @@
     +7 (812) 555-05-55
   </p>
 </div>
- <nav class="site-navigation-goods"> <!-- и здесь нужна обертка? -->
+ <nav class="site-navigation-goods">
   <ul class="site-navigation-goods-list">
     <li class="site-navigation-goods-item"><a class="site-navigation-goods-link" href="#">Материалы</a></li>
     <li class="site-navigation-goods-item"><a class="site-navigation-goods-link" href="#"></a>Техника</li>
@@ -257,7 +257,7 @@
 </footer>
 <section class="modal modal-login">
   <p class="add-goods">Товар добавлен в корзину!</p>
-  <a class="btn button-modal-place-order" href="#">Оформить заказ</a> <!-- Здесь не баттон? -->
+  <a class="btn button-modal-place-order" href="#">Оформить заказ</a>
   <button class="button-modal-continue-shopping">Продолжить покупки</button>
   <span class="modal-close">x</span>
 </section>
