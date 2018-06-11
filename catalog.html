@@ -26,15 +26,11 @@
          <p class="address-shop">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
        </div>
        <ul class="user-navigation-account">
-         <!-- Сомневаюсь в части, которая является аккаунтом -->
          <li class="account-item">
-           <a class="account-link" href="#">
-              <p class="account-name">Равшан Джамшутович</p>
-          </a>
+           <a class="account-link" href="#">Равшан Джамшутович</a>
         </li>
         <li class="account-item">
-          <input type="image" src="#" alt="Выйти"> <!-- ? -->
-         </a>
+          <a class="account-icon-link">Выйти</a> <!-- без href? -->
         </li>
       </ul>
        <ul class="user-navigation-list">
@@ -60,32 +56,20 @@
       <li class="breadcrumbs-item"><a class="breadcrumbs-link-current">Перфораторы</a></li>
     </ul>
     <h1 class="division-name">Перфораторы</h1>
-    <section class="filter-sorting">
-      <ul class="filter-sorting-list"> <!-- ? -->
-        <li class="filter-item">Фильтр:</li>
-        <li class="sorting-item">
-          <a class="sorting-item-link" href="#">По цене</a>
-        </li>
-        <li class="sorting-item">
-          <a class="sorting-item-link" href="#">По типу</a>
-        </li>
-        <li class="sorting-item">
-          <a class="sorting-item-link" href="#">По функционалу</a>
-        </li>
-        <!-- ? переключатели -->
-      </ul>
-      <section class="filter-list">
-        <form action="/echo" method="post" oninput="price-output.value=price.value">
+    <div class="filter-sorting-block">
+    <section class="filter-block">
+      <h4 class="filter-caption">Фильтр:</h4>
+        <form action="#" method="post">
           <div class="price-list">
-            <label for="price">Цена:</label>
+            <h3 class="price-caption">Цена:</h3>
              <input type="range" name="price" id="price" min="0" max="30000" step="1">
           </div>
           <div class="output-area">
             <output name="price-output">
           </div>
           <div class="manufacturer-list">
-            <label for="manufacturer">Производители:</label> <!-- ? id и label -->
-             <input type="checkbox" name="Bosh" id="bosh"> <!-- Не уверена по поводу айди -->
+            <h3 class="manufacturer-caption">Производители:</h3>
+             <input type="checkbox" name="Bosh" id="bosh">
               <label for="bosh">Bosh</label>
              <input type="checkbox" name="Interskol" id="interskol">
               <label for="interskol">Интерскол</label>
@@ -97,102 +81,109 @@
                <label for="hitachi">Hitachi</label>
            </div>
            <div class="food-goods-list">
-             <label for="?">Питание</label>
-             <input type="radio" name="food" value="battery">Аккумуляторные<br> <!-- правильно ли? -->
-             <input type="radio" name="food" value="net">Сетевые
+             <h3 class="food-caption">Питание</h3>
+             <input type="radio" name="food" id="battery" value="battery">
+               <label for="battery">Аккумуляторные</label> <!-- правильно ли тут label использовать и id к input? -->
+             <input type="radio" name="food"  id="net" value="net">
+               <label for="net">Сетевые</label>
            </div>
            <div class="button">
              <input type="submit" value="Показать">
            </div>
          </form>
-       </section>
-     </section>
+      </section>
+     <section class="sorting-block">
+      <ul class="sorting-list">
+        <li class="sorting-item">
+          <a class="sorting-item-link" href="#">По цене</a>
+        </li>
+        <li class="sorting-item">
+         <a class="sorting-item-link" href="#">По типу</a>
+       </li>
+       <li class="sorting-item">
+         <a class="sorting-item-link" href="#">По функционалу</a>
+       </li>
+       <li class="sorting-item">
+        <a class="sorting-item-link sorting-arrow sorting-arrow-top" href="#">По возрастанию</a>
+       </li>
+       <li class="sorting-item">
+        <a class="sorting-item-link sorting-arrow sorting-arrow-bottom" href="#">По убыванию</a>
+       </li>
+     </ul>
+   </section>
+ </div>
     <section class="goods-block">
      <ul class="goods-block-list">
       <li class="goods-block-item">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 3000</h3>
-         <p class="goods-block-image-wrapper">
           <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BFG 3000">
-        </p>
-        <p class="price">
+        <p class="price-goods">
          <b class="through-price">22500 Р.</b>
           <a class="btn button-goods-item" href="#">15500 Р.</a>
         </p>
       </li>
       <li class="goods-block-item">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 6000</h3>
-         <p class="goods-block-image-wrapper">
           <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BFG 6000">
-        </p>
-        <p class="price">
+        <p class="price-goods">
          <b class="through-price">30500 Р.</b>
           <a class="btn button-goods-item" href="#">25500 Р.</a>
         </p>
       </li>
       <li class="goods-block-item">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 2000</h3>
-         <p class="goods-block-image-wrapper">
           <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BFG 2000">
-        </p>
-        <p class="price">
+        <div class="invisible-block"> <!-- так вообще можно? -->
+          <a class="buy-goods" href="#">Купить</a>
+          <a class="to-bookmarks">В закладки</a> <!-- это по идее кнопка? -->
+        </div>
+        <p class="price-goods">
           <a class="btn button-goods-item" href="#">12500 Р.</a>
         </p>
       </li>
       <li class="goods-block-item">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 3000</h3>
-         <p class="goods-block-image-wrapper">
           <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BFG 3000">
-        </p>
-        <p class="price">
+        <p class="price-goods">
          <b class="through-price">22500 Р.</b>
           <a class="btn button-goods-item" href="#">15500 Р.</a>
         </p>
       </li>
       <li class="goods-block-item">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 6000</h3>
-         <p class="goods-block-image-wrapper">
           <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BFG 6000">
-        </p>
-        <p class="price">
+        <p class="price-goods">
          <b class="through-price">30500 Р.</b>
           <a class="btn button-goods-item" href="#">25500 Р.</a>
         </p>
       </li>
       <li class="goods-block-item">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 2000</h3>
-         <p class="goods-block-image-wrapper">
           <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BFG 2000">
-        </p>
-        <p class="price">
+        <p class="price-goods">
           <a class="btn button-goods-item" href="#">12500 Р.</a>
         </p>
       </li>
       <li class="goods-block-item">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 3000</h3>
-         <p class="goods-block-image-wrapper">
           <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BFG 3000">
-        </p>
-        <p class="price">
+        <p class="price-goods">
          <b class="through-price">22500 Р.</b>
           <a class="btn button-goods-item" href="#">15500 Р.</a>
         </p>
       </li>
       <li class="goods-block-item">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 6000</h3>
-         <p class="goods-block-image-wrapper">
           <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BFG 6000">
-        </p>
-        <p class="price">
+        <p class="price-goods">
          <b class="through-price">30500 Р.</b>
           <a class="btn button-goods-item" href="#">25500 Р.</a>
         </p>
       </li>
       <li class="goods-block-item">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 2000</h3>
-         <p class="goods-block-image-wrapper">
           <img class="goods-image-wrapper" scr="#"  width="200" height="200" alt="Перфоратор BOSH BFG 2000">
-        </p>
-        <p class="price">
+        <p class="price-goods">
           <a class="btn button-goods-item" href="#">12500 Р.</a>
         </p>
       </li>
@@ -204,16 +195,21 @@
       <li class="pagination-item"><a class="btn pagination-item-button" href="#">Следующая</a></li>
     </ul>
   </section>
-  <section>
+  <section class="goods-info">
   <p class="goods-info-text">Пара слов о перфораторах</p>
   <p class="goods-text">
   Перфоратор — универсальный строительный инструмент. Предназначен для сверления и долбления отверстий в кирпиче, бетоне и камне.<br>
   Существуют электромеханические и пневматические перфораторы. Современные модели могут выполнять функции дрели, шуруповерта и отбойного молотка. В<br>
   ассортиментном ряду есть выбор «трехрежимников»: в одном устройстве будут совмещены отбойный молоток и ударная дрель.
 </p>
+</section>
 </main>
 <footer class="main-footer">
-  <p class="logo-footer">Техномарт</p>
+  <div class="logo-footer-item">
+  <a class="logo-footer-link">
+    <h2 class="logo-footer">Техномарт</h2>
+  </a>
+</div>
   <nav class="secondary-navigation">
     <ul class="secondary-navigation-info-list">
       <li class="site-navigation-info-item"><a class="site-navigation-info-link" href="#">Компания</a></li>
@@ -223,18 +219,21 @@
       <li class="site-navigation-info-item"><a class="site-navigation-info-link" href="#">Контакты</a></li>
     </ul>
   </nav>
+  <div class="footer-contact-item">
    <p class="footer-contacts">
     г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8
     +7 (812) 555-05-55
   </p>
- <nav class="site-navigation-goods">
+</div>
+ <nav class="site-navigation-goods"> <!-- и здесь нужна обертка? -->
   <ul class="site-navigation-goods-list">
     <li class="site-navigation-goods-item"><a class="site-navigation-goods-link" href="#">Материалы</a></li>
-    <li class="site-navigation-goods-item"><a class="site-navigation-goods-link" href="#">Техника</a></li>
-    <li class="site-navigation-goods-item"><a class="site-navigation-goods-link" href="#">Инструмент</a></li>
+    <li class="site-navigation-goods-item"><a class="site-navigation-goods-link" href="#"></a>Техника</li>
+    <li class="site-navigation-goods-item"><a class="site-navigation-goods-link" href="#"></a>Инструмент</li>
     <li class="site-navigation-goods-item"><a class="site-navigation-goods-link" href="#">Спецпредложения</a></li>
   </ul>
 </nav>
+<div class="footer-copyright-item">
 <p class="footer-copyright">
  &copy; 2010-2017 Компания "Техномарт"
  Все права защищены
@@ -254,6 +253,7 @@
  Разработанно --
  <span class="yellow-text">htmlacademy.ru</span>
 </p>
+</div>
 </footer>
 <section class="modal modal-login">
   <p class="add-goods">Товар добавлен в корзину!</p>
