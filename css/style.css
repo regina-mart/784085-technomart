@@ -267,6 +267,7 @@ background-color: #f3f7f8;
 }
 
 .goods-block-item {
+  list-style: none;
   font-size: 18px;
   line-height: 20px;
   color: #000000;
@@ -310,6 +311,10 @@ button-goods-item {
   height: 38px;
 }
 
+.manufacturer-block-list {
+  list-style: none;
+}
+
 .service-slider-info {
   background-color: #f4f7f9;
 }
@@ -328,7 +333,7 @@ button-goods-item {
   font-family: "PT Sans Regular", Arial, sans-serif;
 }
 
-ul
+.service-slider-list,
 .service-slider-item a{
   list-style: none;
   font-size: 21px;
@@ -338,7 +343,7 @@ ul
   background-color: из-за btn
 }
 
-ul
+.service-slider-info-list,
 .service-caption {
   list-style: none;
   font-size: 36px;
