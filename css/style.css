@@ -1,6 +1,6 @@
 .body {
   margin: 0;
-  padding: : 0;
+  padding: 0;
 
   font-family: "Cuprum Regular", Arial, sans-serif;
   font-size: 13px;
@@ -177,11 +177,12 @@ background-color: #f3f7f8;
 }
 
 .catalog-slider-one {
-  background-image: url ("img/slider-1.jpg");
+  background-image: url("../img/slider-1.jpg");
+  background-repeat: no-repeat;
   font-size: 36px;
   line-height: 36px;
   font-family: "Cuprum Bold", Arial, sans-serif;
-  color: #fffff ;
+  color: #ffffff ;
 }
 
 .catalog-slider-two {
@@ -189,7 +190,7 @@ background-color: #f3f7f8;
   font-size: 36px;
   line-height: 36px;
   font-family: "Cuprum Bold", Arial, sans-serif;
-  color: #fffff ;
+  color: #ffffff ;
 }
 
 
@@ -288,7 +289,7 @@ button-goods-item {
   line-height: 18px;
   color: #ffffff;
   font-family: "PT Sans Bold", Arial, sans-serif;
-  background-color: ee3643;
+  background-color: #ee3643;
   width: 141px;
   height: 38px;
 }
