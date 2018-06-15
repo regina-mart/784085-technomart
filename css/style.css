@@ -186,7 +186,8 @@ background-color: #f3f7f8;
 }
 
 .catalog-slider-two {
-  background-image: url ("img/slider-2.jpg");
+  background-image: url("../img/slider-2.jpg");
+  background-repeat: no-repeat;
   font-size: 36px;
   line-height: 36px;
   font-family: "Cuprum Bold", Arial, sans-serif;
