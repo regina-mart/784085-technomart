@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Техномарт</title>
+    <link href="https://fonts.googleapis.com/css?family=Cuprum:400,400i,700|PT+Sans:400,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
+    <link href="css/style-catalog.css" rel="stylesheet">
   </head>
   <body>
     <header class="main-header">
@@ -10,9 +13,9 @@
         <p class="main-header-logo">Техномарт</p>
          <ul class="order-navigation">
            <li class="product-search"></li>
-           <li class="order-navigation-item"><a class="order-navigation-link" href="#">Закладки</a></li>
-           <li class="order-navigation-item"><a class="order-navigation-link" href="#">Корзина</a></li>
-           <li class="order-navigation-item"><a class="order-navigation-link" href="#">Оформить заказ</a></li>
+           <li class="order-navigation-item"><a class="order-navigation-link order-bookmarks" href="#">Закладки</a></li>
+           <li class="order-navigation-item"><a class="order-navigation-link order-basket" href="#">Корзина</a></li>
+           <li class="order-navigation-item"><a class="order-navigation-link order-checkout" href="#">Оформить заказ</a></li>
          </ul>
          <div class="info-shop">
            <p class="description-shop">
@@ -30,7 +33,7 @@
            <a class="account-link" href="#">Равшан Джамшутович</a>
         </li>
         <li class="account-item">
-          <a class="account-icon-link">Выйти</a> 
+          <a class="account-icon-link">Выйти</a>
         </li>
       </ul>
        <ul class="user-navigation-list">
@@ -50,10 +53,10 @@
   </header>
   <main class="container">
     <ul class="breadcrumbs-list">
-      <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#"></li>
-      <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Каталог</a></li>
-      <li class="breadcrumbs-item"><a class="breadcrumbs-link" href="#">Инструмент</a></li>
-      <li class="breadcrumbs-item"><a class="breadcrumbs-link-current">Перфораторы</a></li>
+      <li class="breadcrumbs-item breadcrumbs-home"><a class="breadcrumbs-link" href="#"></li>
+      <li class="breadcrumbs-item breadcrumbs-catalog"><a class="breadcrumbs-link" href="#">Каталог</a></li>
+      <li class="breadcrumbs-item breadcrumbs-tool"><a class="breadcrumbs-link" href="#">Инструмент</a></li>
+      <li class="breadcrumbs-item breadcrumbs-puncher"><a class="breadcrumbs-link-current">Перфораторы</a></li>
     </ul>
     <h1 class="division-name">Перфораторы</h1>
     <div class="filter-sorting-block">
@@ -94,15 +97,16 @@
       </section>
  </div>
     <section class="goods-block">
+      <h4 class="sorting-caption">Сортировка:</h4>
       <div class="sorting-block">
        <ul class="sorting-list">
-         <li class="sorting-item">
+         <li class="sorting-item sorting-price">
            <a class="sorting-item-link" href="#">По цене</a>
          </li>
-         <li class="sorting-item">
+         <li class="sorting-item sorting-type">
           <a class="sorting-item-link" href="#">По типу</a>
         </li>
-        <li class="sorting-item">
+        <li class="sorting-item sorting-functional">
           <a class="sorting-item-link" href="#">По функционалу</a>
         </li>
         <li class="sorting-item">
