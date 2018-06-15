@@ -39,6 +39,10 @@ background-color: #f3f7f8;
   font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
+.product-search::before {
+  content: url("../img/icon-search.svg");
+}
+
 .product-search {
   list-style: none;
   font-size: 17 px;
@@ -57,6 +61,18 @@ background-color: #f3f7f8;
   font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
+.order-bookmarks::before {
+  content: url("../img/icon-bookmark.svg");
+}
+
+.order-bookmarks {
+  color: #ffffff;
+  text-align: center;
+}
+
+.order-basket::before {
+  content: url("../img/cart-icon.svg");
+}
 .order-basket {
   background-color: #ee3643;
   width: 150px;
@@ -79,6 +95,9 @@ background-color: #f3f7f8;
   font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
+.number-shop::before {
+  content: url("../img/icon-phone.svg");
+}
 .number-shop {
   font-size: 21px;
   line-height: 21px;
@@ -97,7 +116,15 @@ background-color: #f3f7f8;
   font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
-.account-item {
+.account-link::before {
+  content: url("../img/icon-user.svg");
+}
+
+.account-link::after {
+  content: url("../img/icon-logout.svg");
+}
+.account-item,
+.account-link {
   list-style: none;
   font-size: 21px;
   line-height: 21px;
@@ -105,7 +132,7 @@ background-color: #f3f7f8;
   font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
-.account-item a {
+.account-link a {
   list-style: none;
   font-size: 21px;
   line-height: 21px;
@@ -244,13 +271,13 @@ input[radio] {
   border-bottom: 1px dashed;
   border-bottom-color: #ee3643;
 }
-
+/*?*/
 .sorting-arrow-top::before {
-  content: url("../img/")
+  content: url("../img/icon-sorting-top")
 }
 
 .sorting-arrow-bottom::before {
-  content: url("../img/")
+  content: url("../img/icon-sorting-bottom")
 }
 
 .goods-block-name {
