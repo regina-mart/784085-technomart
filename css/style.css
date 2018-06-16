@@ -1,4 +1,4 @@
-.body {
+body {
   margin: 0;
   padding: 0;
 
@@ -15,8 +15,8 @@ a {
   text-decoration: none;
 }
 
-header{
-background-color: #f3f7f8;
+header {
+  background-color: #f3f7f8;
 }
 
 .header-logo {
@@ -29,32 +29,52 @@ background-color: #f3f7f8;
   background-color: #ee3643;
   width: 220px;
   height: 47px;
-  font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
 .order-navigation {
   background-color: #293449;
   width: 1280px;
   height: 42px;
-  font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
-.product-search {
-  list-style: none;
-  font-size: 17 px;
-  line-height: 18 px;
-  color: #ffffff;
-  font-family: "Cuprum Regular", Arial, sans-serif;
-
+.product-search::before {
+  content: url("../img/icon-search.svg");
 }
 
+.product-search,
 .order-navigation-item,
-.order-navigation-link {
+.order-navigation-link  {
   list-style: none;
   font-size: 17px;
   line-height: 18px;
   color: #ffffff;
-  font-family: "Cuprum Regular", Arial, sans-serif;
+}
+
+.order-bookmarks::before {
+  content: url("../img/icon-bookmarks.svg");
+}
+
+.order-bookmarks {
+  color: #ffffff;
+  text-align: center;
+}
+
+.order-basket::before {
+  content: url("../img/cart-icon.svg");
+}
+
+.order-basket {
+  background-color: #ee3643;
+  width: 150px;
+  height: 42px;
+  text-align: center;
+}
+
+.order-checkout {
+  background-color: #63a63e;
+  width: 150px;
+  height: 42px;
+  text-align: center;
 }
 
 .description-shop {
@@ -62,7 +82,10 @@ background-color: #f3f7f8;
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
-  font-family: "Cuprum Regular", Arial, sans-serif;
+}
+
+.number-shop::before {
+  content: url("../img/icon-phone.svg");
 }
 
 .number-shop {
@@ -73,14 +96,16 @@ background-color: #f3f7f8;
   width: 270px;
   height: 45px;
   text-align: center;
-  font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
 .address-shop {
-  font-size: 14px;
-  line-height: 24px;
+  font-size: 21px;
+  line-height: 21px;
   color: #32425c;
-  font-family: "Cuprum Regular", Arial, sans-serif;
+}
+
+.user-navigation-entry::before {
+  content: url("../img/") /*вырезать вход*/
 }
 
 .user-navigation-item,
@@ -89,7 +114,47 @@ background-color: #f3f7f8;
   font-size: 21px;
   line-height: 21px;
   color: #000000;
-  font-family: "Cuprum Regular", Arial, sans-serif;
+}
+
+.user-navigation-entry {
+  background-color: #ffffff;
+  width: 121px;
+  height: 45px;
+}
+
+.user-navigation-registration {
+  background-color: #ffffff;
+  width: 150px;
+  height: 45px;
+}
+
+.account-link::before {
+  content: url("../img/icon-user.svg");
+}
+
+.account-icon-link::after {
+  content: url("../img/icon-logout.svg");
+}
+
+.account-item,
+.account-link {
+  list-style: none;
+  font-size: 21px;
+  line-height: 21px;
+  color: #000000;
+}
+
+.account-link a {
+  color: #000000;
+}
+
+.user-navigation-account-list,
+.user-navigation-account-link {
+  list-style: none;
+  font-size: 16px;
+  line-height: 18px;
+  color: #32425c;
+  text-decoration: underline;
 }
 
 .site-navigation-item,
@@ -98,82 +163,81 @@ background-color: #f3f7f8;
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
-  font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
 .container {
   background-color: #ffffff;
 }
 
+.btn {
+  font-size: 14px;
+  line-height: 18px;
+  color: #ffffff;
+  background-color: #ee3643;
+  text-transform: uppercase;
+  text-align: center;
+}
+
 .catalog-list {
   list-style: none;
-  font-family: "Cuprum Bold", Arial, sans-serif;
+}
+
+.catalog-name {
+  font-size: 24px;
+  line-height: 30px;
+  color: #ffffff;
+}
+
+.catalog-button {
+  background-color: rgba(0, 0, 0, 0.2);
+  width: 135px;
+  height: 38px;
+  text-decoration: none;
+}
+
+.catalog-item-material::after {
+  content: url("../img/icon-materials.svg");
 }
 
 .catalog-item-material {
+  color: #ffffff;
   background-color: #ffbf47;
   width: 300px;
   height: 123px;
 }
 
-.catalog-name-material {
-  font-size: 24px;
-  line-height: 30px;
+.catalog-item-material a {
   color: #ffffff;
 }
 
-.catalog-item-material a {
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  background-color: #e5ac40;
-  width: 135px;
-  height: 38px;
-  font-family: "Cuprum Regular", Arial, sans-serif;
+.catalog-item-tool::after {
+  content: url("../img/icon-tool.svg");
 }
 
 .catalog-item-tool {
+  color: #ffffff;
   background-color: #3bbce3;
   width: 300px;
   height: 123px;
 }
 
-.catalog-name-tool {
-  font-size: 24px;
-  line-height: 30px;
+.catalog-item-tool a {
   color: #ffffff;
 }
 
-.catalog-item-tool a {
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  background-color: #35a9cc;
-  width: 135px;
-  height: 38px;
-  font-family: "Cuprum Regular", Arial, sans-serif;
+.catalog-item-technology::after {
+  content: url("../img/icon-technology.svg");
 }
 
 .catalog-item-technology {
+  color: #ffffff;
   background-color: #dc91d8;
   width: 300px;
   height: 123px;
 }
 
-.catalog-name-technology {
-  font-size: 24px;
-  line-height: 30px;
-  color: #ffffff;
-}
-
 .catalog-item-technology a {
-  font-size: 14px;
-  line-height: 18px;
   color: #ffffff;
-  background-color: #c682c2;
-  width: 135px;
-  height: 38px;
-  font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
 .catalog-slider-one {
@@ -182,7 +246,9 @@ background-color: #f3f7f8;
   font-size: 36px;
   line-height: 36px;
   font-family: "Cuprum Bold", Arial, sans-serif;
-  color: #ffffff ;
+  color: #ffffff;
+  width: 620px;
+  height: 266px;
 }
 
 .catalog-slider-two {
@@ -191,83 +257,83 @@ background-color: #f3f7f8;
   font-size: 36px;
   line-height: 36px;
   font-family: "Cuprum Bold", Arial, sans-serif;
-  color: #ffffff ;
+  color: #ffffff;
+  width: 620px;
+  height: 266px;
 }
 
+.catalog-slider-text-name {
+  font-size: 36px;
+  line-height: 36px;
+  color: #ffffff;
+  font-family: "Cuprum Bold", Arial, sans-serif;
+}
+
+.catalog-slider-text {
+  font-size: 18px;
+  line-height: 24px;
+  color: #ffffff;
+}
 
 .btn,
-.button-catalog-slider a {
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  background-color: #ee3643;
+.button-catalog-slider {
   width: 195px;
   height: 38px;
-  font-family: "Cuprum Regular", Arial, sans-serif;
+}
+
+.catalog-item-discounts::after {
+  content: url("../img/icon-discount.svg");
 }
 
 .catalog-item-discounts {
+  color: #ffffff;
   background-color: #8ed78f;
   width: 300px;
   height: 123px;
 }
 
-.catalog-name-discounts {
-  font-size: 24px;
-  line-height: 30px;
+.catalog-item-discounts a {
   color: #ffffff;
 }
 
-.catalog-item-discounts a {
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  background-color: #80c180;
-  width: 135px;
-  height: 38px;
-  font-family: "Cuprum Regular", Arial, sans-serif;
+.catalog-item-delivery::after {
+  content: url("../img/icon-delivery.svg");
 }
 
 .catalog-item-delivery {
+  color: #ffffff;
   background-color: #ffc047;
   width: 300px;
   height: 123px;
 }
 
-.catalog-name-delivery {
-  font-size: 24px;
-  line-height: 30px;
-  color: #ffffff;
-}
-
 .catalog-item-delivery a {
-  font-size: 14px;
-  line-height: 18px;
   color: #ffffff;
-  background-color: #e5ac40;
-  width: 135px;
-  height: 38px;
-  font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
-.goods-division,
 .second-caption {
   font-size: 30px;
   line-height: 30px;
-  color: #32425c;
-  font-family: "Cuprum Regular", Arial, sans-serif;
+  color: #000000;
+  text-transform: uppercase;
 }
 
-.goods-division a{
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  font-family: "Cuprum Regular", Arial, sans-serif;
-  background-color: #ee3643;
+.second-caption-goods,
+.second-caption-manufacturer {
+  color: 32425c;
+  background-color: #f9f5f0;
+  width: 940px;
+  height: 89px;
+}
+
+.btn,
+.button-goods,
+.button-manufacturer {
   width: 253px;
   height: 38px;
 }
 
+.goods-block-list,
 .goods-block-item {
   list-style: none;
   font-size: 18px;
@@ -285,31 +351,9 @@ background-color: #f3f7f8;
 }
 
 .btn,
-button-goods-item {
-  font-size: 17px;
-  line-height: 18px;
-  color: #ffffff;
+.button-goods-item {
   font-family: "PT Sans Bold", Arial, sans-serif;
-  background-color: #ee3643;
   width: 141px;
-  height: 38px;
-}
-
-.manufacturer-division,
-.second-caption {
-  font-size: 30px;
-  line-height: 30px;
-  color: #32425c;
-  font-family: "Cuprum Regular", Arial, sans-serif;
-}
-
-.manufacturer-division a{
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  font-family: "Cuprum Regular", Arial, sans-serif;
-  background-color: #ee3643;
-  width: 253px;
   height: 38px;
 }
 
@@ -321,17 +365,7 @@ button-goods-item {
   background-color: #f4f7f9;
 }
 
-.second-caption-service {
-  font-size: 30px;
-  line-height: 30px;
-  color: #000000;
-  font-family: "Cuprum Regular", Arial, sans-serif;
-}
-
 .specification-text {
-  font-size: 13px;
-  line-height: 24px;
-  color: #000000;
   font-family: "PT Sans Regular", Arial, sans-serif;
 }
 
@@ -340,9 +374,32 @@ button-goods-item {
   list-style: none;
   font-size: 21px;
   line-height: 30px;
-  color: #32425c;
+  color: #ffffff;
+  text-transform: none;
   font-family: "Cuprum Bold", Arial, sans-serif;
-  background-color: из-за btn
+
+  /*hover*/
+}
+
+.slider-delivery-button {
+  color: #ffffff;
+  background-color: #32425c;
+  width: 240px;
+  height: 61px;
+}
+
+.slider-guarantee-button {
+  color: #ffffff;
+  background-color: #32425c;
+  width: 240px;
+  height: 61px;
+}
+
+.slider-credit-button {
+  color: #ffffff;
+  background-color: #32425c;
+  width: 240px;
+  height: 61px;
 }
 
 .service-slider-info-list,
@@ -351,85 +408,241 @@ button-goods-item {
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
-  font-family: "Cuprum Regular", Arial, sans-serif;
+}
+
+.service-slider-delivery::after {
+  content: url("../img/delivery.png");
+}
+
+.service-slider-guarantee::after {
+  content: url("../img/guarantee.png");
+}
+
+.service-slider-credit::after {
+  content: url("../img/credit.png");
 }
 
 .service-slider-text {
   font-size: 13px;
   line-height: 24px;
-  color: #000000;
   font-family: "PT Sans Regular", Arial, sans-serif;
 }
 
 .btn,
 .service-credit-button {
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  font-family: "Cuprum Regular", Arial, sans-serif;
-  background-color: ee3643;
   width: 195px;
   height: 38px;
 }
 
-section
-.second-caption {
-  font-size: 30px;
-  line-height: 30px;
-  color: #000000;
-  font-family: "Cuprum Regular", Arial, sans-serif;
-}
-
 .about-company-text {
-  font-size: 13px;
-  line-height: 24px;
-  color: #000000;
   font-family: "PT Sans Regular", Arial, sans-serif;
 }
 
-.transport-companies-list {
+.transport-company-list {
   list-style: none;
   font-size: 18px;
   line-height: 20px;
-  color: #000000;
-  font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
 .btn,
 .button-about-company {
-  font-size: 14px;
-  line-height: 18px;
-  color: #ffffff;
-  font-family: "Cuprum Regular", Arial, sans-serif;
-  background-color: ee3643;
   width: 220px;
   height: 38px;
 }
 
-
-.second-caption-contact {
-  font-size: 30px;
-  line-height: 30px;
-  color: #000000;
-  font-family: "Cuprum Regular", Arial, sans-serif;
-}
-
 .map-location {
-  font-size: 13px;
-  line-height: 24px;
-  color: #000000;
   font-family: "PT Sans Regular", Arial, sans-serif;
 }
 
 .btn,
 .button-map-feedback {
+  width: 300px;
+  height: 38px;
+}
+
+.breadcrumbs-home::before {
+  content: url("../img/icon-home.svg");
+}
+
+.breadcrumbs-item {
+  list-style: none;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "PT Sans Regular", Arial, sans-serif;
+}
+
+.breadcrumbs-item a {
+  color: #000000;
+}
+
+.division-name {
+  font-size: 30px;
+  line-height: 30px;
+  color: #32425c;
+  text-transform: uppercase;
+  background-color: #f2f6f8;
+  width: 940px;
+  height: 89px;
+}
+
+.filter-caption {
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "PT Sans Regular", Arial, sans-serif;
+  background-color: #f7f3ec;
+  width: 220px;
+  height: 38px;
+}
+
+.price-caption {
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "PT Sans Bold", Arial, sans-serif;
+}
+
+.manufacturer-caption {
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "PT Sans Bold", Arial, sans-serif;
+}
+
+input[checked] {
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  font-family: "PT Sans Regular", Arial, sans-serif;
+}
+
+.food-caption {
+  font-size: 17px;
+  line-height: 30px;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "PT Sans Bold", Arial, sans-serif;
+}
+
+input[radio] {
+  font-size: 15px;
+  line-height: 20px;
+  color: #000000;
+  font-family: "PT Sans Regular", Arial, sans-serif;
+}
+
+/* пишутся ли классы у инпутов */
+
+.sorting-caption,
+.sorting-list {
+  list-style: none;
+  font-size: 13px;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #000000;
+  font-family: "PT Sans Regular", Arial, sans-serif;
+  background-color: #f7f3ec;
+  width: 700px;
+  height: 38px;
+}
+
+.sorting-list a {
+  color: #000000;
+}
+
+.sorting-price a {
+  color: #ee3643;
+}
+
+.sorting-type a {
+  color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px dashed;
+  border-bottom-color: #ee3643;
+}
+
+.sorting-functional a {
+  color: rgba(0, 0, 0, 0.5);
+  border-bottom: 1px dashed;
+  border-bottom-color: #ee3643;
+}
+/*?*/
+.sorting-arrow-top::before {
+  content: url("../img/icon-sorting-top.svg")
+}
+
+.sorting-arrow-bottom::before {
+  content: url("../img/icon-sorting-bottom.svg")
+}
+
+.buy-goods::before {
+  content: url("../img/cart-icon.svg");
+}
+
+.buy-goods {
   font-size: 14px;
   line-height: 18px;
   color: #ffffff;
-  font-family: "Cuprum Regular", Arial, sans-serif;
-  background-color: ee3643;
-  width: 300px;
+  text-transform: uppercase;
+  background-color: #63a63e;
+  width: 135px;
   height: 38px;
+  text-align: center;
+  box-shadow:
+}
+
+.to-bookmarks {
+  font-size: 14px;
+  line-height: 18px;
+  color: #32425c;
+  text-transform: uppercase;
+  border: 2px solid #63a63e;
+  width: 135px;
+  height: 38px;
+  text-align: center;
+}
+
+.pagination-list,
+.pagination-item-button {
+  list-style: none;
+  font-size: 13px;
+  line-height: 18px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+  width: 38px;
+  height: 38px;
+  border: 1px solid#999999;
+}
+
+.pagination-item-button-current {
+  color: #ffffff;
+  background-color: #ee3643;
+}
+
+.pagination-item-button-next {
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  background-color: transparent;
+  border: 1px solid#999999;
+  width: 140px;
+  height: 38px;
+}
+
+.goods-info {
+  background-color: #f2f6f8;
+  width: 940px;
+  height: 154px;
+}
+
+.goods-text {
+  font-family: "PT Sans Regular", Arial, sans-serif;
 }
 
 .main-footer {
@@ -448,7 +661,6 @@ section
   background-color: #ee3643;
   width: 220px;
   height: 47px;
-  font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
 .secondary-navigation-info-list {
@@ -456,38 +668,27 @@ section
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
-  font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
 .secondary-navigation-info-list a {
-  list-style: none;
-  font-size: 18px;
-  line-height: 24px;
   color: #f3f7f9;
-  font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
 .footer-contacts {
   font-size: 18px;
   line-height: 24px;
   color: #f3f7f9;
-  font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
 .site-navigation-goods-list {
   list-style: none;
   font-size: 18px;
   line-height: 24px;
-  color: ffd180;
-  font-family: "Cuprum Regular", Arial, sans-serif;
+  color: #ffd180;
 }
 
 .site-navigation-goods-list a {
-  list-style: none;
-  font-size: 18px;
-  line-height: 24px;
-  color: ffd180;
-  font-family: "Cuprum Regular", Arial, sans-serif;
+  color: #ffd180;
 }
 
 .footer-copyright-item {
@@ -498,11 +699,22 @@ section
   font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
 .social-list {
   list-style: none;
+}
+
+.social-item-vk::before {
+  content: url("../img/vk-icon.svg");
+}
+
+.social-item-fb::before {
+  content: url("../img/fb-icon.svg");
+}
+
+.social-item-insta::before {
+  content: url("../img/insta-icon.svg");
 }
 
 .feedback-info,
@@ -510,12 +722,8 @@ section
  font-size: 16px;
   line-height: 18px;
   color: #ffffff;
-  font-family: "Cuprum Regular", Arial, sans-serif;
 }
 
 .yellow-text {
-  font-size: 16px;
-  line-height: 18px;
   color: #ffd180;
-  font-family: "Cuprum Regular", Arial, sans-serif;
 }
