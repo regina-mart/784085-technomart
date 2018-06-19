@@ -887,3 +887,94 @@ input[radio] {
 .goods-block-item:hover {
 
 }
+
+.header-top {
+  display: flex;
+}
+
+.order-navigation {
+  display: flex;
+  align-items: center;
+}
+
+.info-contact-user {
+  display: flex;
+}
+
+.user-navigation {
+  display: flex;
+}
+
+.site-navigation {
+  display: flex;
+  justify-content: center;
+}
+
+.catalog-list-one {
+  display: flex;
+}
+
+.slider-catalog {
+  display: flex;
+}
+
+.goods-division {
+  display: flex;
+}
+
+.button-goods {
+  justify-content: flex-end;
+}
+
+.goods-block-list {
+  display: flex;
+}
+
+.manufacturer-division {
+  display: flex;
+}
+
+.button-manufacturer {
+  justify-content: flex-end;
+}
+
+.manufacturer-block-list {
+  display: flex;
+}
+
+.slider-service {
+  display: flex;
+}
+
+.company-and-contact {
+  display: flex;
+}
+
+.logo-and-secondary-navigation {
+  display: flex;
+}
+
+.secondary-navigation-info-list {
+  display: flex;
+}
+
+.footer-contact-and-navigation-goods {
+  display: flex;
+}
+
+.site-navigation-goods-list {
+  display: flex;
+}
+
+.footer-bottom {
+  display: flex;
+}
+
+.social-list {
+  display: flex;
+}
+
+.feedback-info,
+.developed-by {
+  display: flex;
+}
