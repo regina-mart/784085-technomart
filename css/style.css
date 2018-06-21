@@ -127,13 +127,13 @@ header {
 }
 
 .address-shop {
-  font-size: 21px;
-  line-height: 21px;
+  font-size: 14px;
+  line-height: 24px;
   color: #32425c;
 }
 
 .user-navigation-entry::before {
-  content: url("../img/") /*вырезать вход*/
+  content: url("../img/icon-login.svg")
 }
 
 .user-navigation-entry:hover {
