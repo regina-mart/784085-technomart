@@ -9,6 +9,7 @@
   </head>
   <body>
     <header class="main-header">
+      <div class="container-block">
       <nav class="main-navigation">
         <div class="header-top">
         <a class="main-header-logo">
@@ -53,8 +54,10 @@
            <li class="site-navigation-item"><a class="site-navigation-link site-navigation-contact" href="#">Контакты</a></li>
          </ul>
       </nav>
+    </div>
     </header>
     <main class="container">
+      <div class="container-block">
      <h1 class="visually-hidden">Магазин Техномарт</h1>
       <section class="division-catalog">
         <h2 class="visually-hidden">Разделы магазина</h2>
@@ -81,10 +84,11 @@
                 <div class="catalog-slider-two">
                     <p class="catalog-slider-text-name">Дрели</p>
                     <p class="catalog-slider-text">Соседям на радость!</p>
+                      <a class="btn button-catalog-slider" href="#">Открыть каталог</a>
                 </div>
-                <a class="btn button-catalog-slider" href="#">Открыть каталог</a>
+
               </figure>
-            <ul class="catalog-list">
+            <ul class="catalog-list catalog-list-two">
              <li class="catalog-item-discounts">
                <h3 class="catalog-name">Скидки 50%</h3>
                   <a class="btn catalog-button" href="#">На 350 товаров</a>
@@ -96,9 +100,9 @@
              </ul>
            </div>
            </section>
-           <div class="goods-division">
-           <h2 class="second-caption second-caption-goods">Популярные товары:</h2>
-            <a class="btn button-goods" href="#">Все популярные товары</a>
+           <div class="goods-manufacturer-division">
+           <h2 class="second-caption second-caption-goods-manufacturer">Популярные товары:</h2>
+            <a class="btn button-goods-manufacturer" href="#">Все популярные товары</a>
           </div>
              <section class="goods-block">
               <ul class="goods-block-list">
@@ -135,9 +139,9 @@
        </li>
      </ul>
     </section>
-    <div class="manufacturer-division">
-    <h2 class="second-caption second-caption-manufacturer">Популярные производители:</h2>
-     <a class="btn button-manufacturer" href="#">Все производители</a>
+    <div class="goods-manufacturer-division">
+    <h2 class="second-caption second-caption-goods-manufacturer">Популярные производители:</h2>
+     <a class="btn button-goods-manufacturer" href="#">Все производители</a>
    </div>
       <section class="manufacturer-block">
        <ul class="manufacturer-block-list">
@@ -183,12 +187,14 @@
         </li>
       </ul>
     </section>
+    <section class="service-info">
+      <div class="service-info-block">
     <h2 class="second-caption">Сервисы</h2>
-     <section class="service-info">
       <p class="specification-text">
         Хороший интернет-магазин отличается от плохого не только ценами!
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
       </p>
+    </div>
       <div class="slider-service">
       <div class="service-slider-link">
         <ul class="service-slider-list">
@@ -266,6 +272,7 @@
      </div>
      </main>
        <footer class="main-footer">
+         <div class="container-block">
          <div class="logo-and-secondary-navigation">
          <div class="logo-footer-item">
          <a class="logo-footer-link">
@@ -292,25 +299,22 @@
         <nav class="site-navigation-goods">
          <ul class="site-navigation-goods-list">
            <li class="site-navigation-goods-item"><a class="site-navigation-goods-link site-navigation-goods-material" href="#">Материалы</a></li>
-           <li class="site-navigation-goods-item"><a class="site-navigation-goods-link site-navigation-goods-technology" href="#"></a>Техника</li>
-           <li class="site-navigation-goods-item"><a class="site-navigation-goods-link site-navigation-goods-tool" href="#"></a>Инструмент</li>
+           <li class="site-navigation-goods-item"><a class="site-navigation-goods-link site-navigation-goods-technology" href="#">Техника</a></li>
+           <li class="site-navigation-goods-item"><a class="site-navigation-goods-link site-navigation-goods-tool" href="#">Инструмент</a></li>
            <li class="site-navigation-goods-item"><a class="site-navigation-goods-link site-navigation-goods-special-offer" href="#">Спецпредложения</a></li>
          </ul>
       </nav>
     </div>
     <div class="footer-bottom">
-      <div class="footer-copyright-item">
       <p class="footer-copyright">
         &copy; 2010-2017 Компания "Техномарт"
         Все права защищены
       </p>
-      <div class="footer-social">
         <ul class="social-list">
           <li class="social-item-vk"><a class="btn social-button" href="#">Вконтакте</a></li>
           <li class="social-item-fb"><a class="btn social-button" href="#">Фейсбук</a></li>
           <li class="social-item-insta"><a class="btn social-button" href="#">Инстаграм</a></li>
         </ul>
-      </div>
       <p class="feedback-info">
         Обратная связь:
         <span class="yellow-text">mail@htmlacademy.ru</span>
@@ -319,8 +323,8 @@
         Разработанно --
         <span class="yellow-text">htmlacademy.ru</span>
       </p>
-    </div>
   </div>
+</div>
    </footer>
    <section class="modal modal-login">
      <form action="/echo" method="post">
