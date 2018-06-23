@@ -9,14 +9,37 @@ body {
   color: #000000;
 
   background-color: #ffffff;
+
+  width: 100%;
+}
+
+.visually-hidden {
+  display: none;
+}
+
+.container-block {
+  width: 960px;
+  margin: auto;
 }
 
 a {
   text-decoration: none;
 }
 
-header {
+.main-header {
   background-color: #f3f7f8;
+}
+
+.header-top {
+  background-color: #293449;
+  display: inline-block;
+
+  display: flex;
+  justify-content:space-between;
+  margin-bottom: 46px;
+  padding: 0 10px;
+
+  position: relative;
 }
 
 .header-logo {
@@ -36,9 +59,10 @@ header {
 }
 
 .order-navigation {
-  background-color: #293449;
-  width: 1280px;
-  display: inline-block;
+  display: flex;
+  align-items: center;
+  margin: 0;
+  padding: 0;
 }
 
 .product-search,
@@ -52,12 +76,16 @@ header {
 
 .product-search::before {
   content: url("../img/icon-search.svg");
+  position: absolute;
+  top: 25px;
+  left: 237px;
 }
 
 .product-search {
   background-color: #293449;
   width: 270px;
   display: inline-block;
+  padding-left: 29px;
 }
 
 .product-search:hover {
@@ -99,10 +127,19 @@ header {
   width: 150px;
   display: inline-block;
   text-align: center;
+  padding-top: 6px;
+  padding-bottom: 6px;
 }
 
 .order-checkout:hover {
   background-color: #5fbb2d;
+}
+
+.info-contact-user {
+  display: flex;
+  justify-content: space-between;
+
+  margin-bottom: 44px;
 }
 
 .description-shop {
@@ -110,6 +147,13 @@ header {
   font-size: 16px;
   line-height: 23px;
   color: #ee3643;
+  margin-left: 65px;
+}
+
+.contacts-shop {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .number-shop::before {
@@ -130,6 +174,10 @@ header {
   font-size: 14px;
   line-height: 24px;
   color: #32425c;
+}
+
+.user-navigation {
+  display: flex;
 }
 
 .user-navigation-entry::before {
@@ -201,6 +249,18 @@ header {
   color: #ee3643;
 }
 
+.site-navigation {
+    display: flex;
+    justify-content: space-around;
+    margin: 0;
+    padding: 0;
+
+    background-color: #32425c;
+    width: 940px;
+
+    margin-bottom: 60px; /*отодвигается не тем фоном*/
+}
+
 .site-navigation-item,
 .site-navigation-link {
   list-style: none;
@@ -208,11 +268,14 @@ header {
   line-height: 17px;
   color: #ffffff;
 
-  background-color: #32425c;
-  width: 940px;
+  padding-top: 20px;
+  padding-bottom: 20px;
 }
 
-.site-navigation-index {
+/* .site-navigation-link:hover { если делать так ховер, то все флексы словно отключаются и все вновь превращается в список
+  background-color: #293449; */
+
+/* .site-navigation-index {
   background-color: #32425c;
   width: 120px;
   display: inline-block;
@@ -280,7 +343,7 @@ header {
 
 .site-navigation-contact:hover {
   background-color: #293449;
-}
+} */
 
 .container {
   background-color: #ffffff;
@@ -294,6 +357,27 @@ header {
   text-transform: uppercase;
   text-align: center;
   display: inline-block;
+}
+
+.catalog-list-one {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  justify-content: space-between;
+}
+
+.slider-catalog {
+  display: flex;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-list-two {
+  display: flex;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  /* justify-content: space-between; */
 }
 
 .catalog-list {
@@ -316,6 +400,7 @@ header {
 .catalog-button:hover {
   background-color: rgba(0, 0, 0, 0.3);
 }
+
 .catalog-item-material::after {
   content: url("../img/icon-materials.svg");
 }
@@ -450,11 +535,40 @@ header {
   text-transform: uppercase;
 }
 
-.second-caption-goods,
-.second-caption-manufacturer {
-  color: 32425c;
+.goods-manufacturer-division {
+  display: flex;
+}
+
+.button-goods-manufacturer { /*не отодвигает кнопку*/
+  justify-content: flex-end;
+}
+
+.goods-block-list { /*не выстраивает их в ряд*/
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.goods-block-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.manufacturer-block-list {
+  display: flex;
+  margin: 0;
+  padding: 0;
+  flex-wrap: wrap;
+}
+
+.goods-manufacturer-division {
   background-color: #f9f5f0;
-  width: 940px;
+}
+
+.second-caption-goods-manufacturer {
+  color: #32425c;
 }
 
 .btn,
@@ -470,6 +584,8 @@ header {
   line-height: 20px;
   color: #000000;
   font-family: "PT Sans Bold", Arial, sans-serif;
+
+  width: 220px;
 }
 
 .through-price {
@@ -490,8 +606,22 @@ header {
   list-style: none;
 }
 
+.manufacturer-block-item {
+  width: 220px;
+}
+
 .manufacturer-block-item:hover {
   box-shadow: 10px 0 10px #000000;
+}
+
+.service-info-block {
+  width: 400px;
+}
+
+.slider-service { /*не сместилось к краю*/
+  display: flex;
+  margin: 0;
+  padding: 0;
 }
 
 .service-slider-info {
@@ -584,6 +714,21 @@ header {
   list-style: none;
   font-size: 18px;
   line-height: 20px;
+}
+
+.company-and-contact {
+  display: flex;
+}
+
+.about-company-block {
+  flex-direction: column;
+  margin-right: 90px;
+
+  width: 550px;
+}
+
+.contact-info {
+  flex-direction: column;
 }
 
 .btn,
@@ -785,10 +930,30 @@ input[radio] {
 .goods-text {
   font-family: "PT Sans Regular", Arial, sans-serif;
 }
-
+ /* футер не на середине  */
 .main-footer {
   background: #32425c;
   width: 1917px;
+}
+
+.logo-and-secondary-navigation {
+  display: flex;
+}
+
+.secondary-navigation-info-list {
+  display: flex;
+}
+
+.footer-contact-and-navigation-goods {
+  display: flex;
+}
+
+.site-navigation-goods-list {
+  display: flex;
+}
+
+.footer-bottom {
+  display: flex;
 }
 
 .logo-footer {
@@ -886,95 +1051,4 @@ input[radio] {
 
 .goods-block-item:hover {
 
-}
-
-.header-top {
-  display: flex;
-}
-
-.order-navigation {
-  display: flex;
-  align-items: center;
-}
-
-.info-contact-user {
-  display: flex;
-}
-
-.user-navigation {
-  display: flex;
-}
-
-.site-navigation {
-  display: flex;
-  justify-content: center;
-}
-
-.catalog-list-one {
-  display: flex;
-}
-
-.slider-catalog {
-  display: flex;
-}
-
-.goods-division {
-  display: flex;
-}
-
-.button-goods {
-  justify-content: flex-end;
-}
-
-.goods-block-list {
-  display: flex;
-}
-
-.manufacturer-division {
-  display: flex;
-}
-
-.button-manufacturer {
-  justify-content: flex-end;
-}
-
-.manufacturer-block-list {
-  display: flex;
-}
-
-.slider-service {
-  display: flex;
-}
-
-.company-and-contact {
-  display: flex;
-}
-
-.logo-and-secondary-navigation {
-  display: flex;
-}
-
-.secondary-navigation-info-list {
-  display: flex;
-}
-
-.footer-contact-and-navigation-goods {
-  display: flex;
-}
-
-.site-navigation-goods-list {
-  display: flex;
-}
-
-.footer-bottom {
-  display: flex;
-}
-
-.social-list {
-  display: flex;
-}
-
-.feedback-info,
-.developed-by {
-  display: flex;
 }
