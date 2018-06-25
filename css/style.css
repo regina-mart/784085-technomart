@@ -264,14 +264,12 @@ a {
 
 .site-navigation {
     display: flex;
-    justify-content: space-around;
+    /* justify-content: space-around; */
     margin: 0;
     padding: 0;
 
     background-color: #32425c;
     width: 940px;
-
-    /* margin-bottom: 60px; /*отодвигается не тем фоном*/ */
 }
 
 .site-navigation-item,
@@ -283,8 +281,8 @@ a {
 
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 16px;
-  padding-right: 16px;
+  padding-left: 17px;
+  padding-right: 17px; /*??*/
 }
 
 .site-navigation-item:hover {
@@ -1065,6 +1063,12 @@ input[radio] {
   text-decoration: underline;
 }
 
-.goods-block-item:hover {
-
+.modal {
+  display: none;
 }
+
+/* .hidden-text {
+text-indent: 500%;
+white-space: nowrap;
+overflow: hidden;
+} */
