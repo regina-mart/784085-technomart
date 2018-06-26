@@ -278,11 +278,13 @@ a {
   font-size: 17px;
   line-height: 17px;
   color: #ffffff;
+}
 
+.site-navigation-item {
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 17px;
-  padding-right: 17px; /*??*/
+  padding-left: 34px;
+  padding-right: 34px; /*??*/
 }
 
 .site-navigation-item:hover {
@@ -759,6 +761,19 @@ a {
   width: 300px;
 }
 
+.account-division {
+  display: flex;
+  flex-direction: column;
+}
+
+.user-navigation-account-list {
+  display: flex;
+}
+
+.breadcrumbs-list {
+  display: flex;
+}
+
 .breadcrumbs-home::before {
   content: url("../img/icon-home.svg");
 }
@@ -783,6 +798,15 @@ a {
   text-transform: uppercase;
   background-color: #f2f6f8;
   width: 940px;
+}
+
+.filter-sorting-goods {
+  display: flex;
+}
+
+.filter-block {
+  display: flex;
+  flex-direction: column;
 }
 
 .filter-caption {
@@ -835,6 +859,16 @@ input[radio] {
 
 /* пишутся ли классы у инпутов */
 
+.manufacturer-list,
+.food-goods-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.sorting-list {
+  display: flex;
+}
+
 .sorting-caption,
 .sorting-list {
   list-style: none;
@@ -872,6 +906,16 @@ input[radio] {
 
 .sorting-arrow-bottom::before {
   content: url("../img/icon-sorting-bottom.svg")
+}
+
+.goods-block-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.goods-block-item {
+  display: flex;
+  flex-direction: column;
 }
 
 .buy-goods::before {
@@ -920,6 +964,8 @@ input[radio] {
   background-color: transparent;
   width: 38px;
   border: 1px solid#999999;
+
+  display: flex;
 }
 
 .pagination-item-button-current {
@@ -947,7 +993,7 @@ input[radio] {
  /* футер не на середине  */
 .main-footer {
   background: #32425c;
-  width: 1917px;
+  width: 100%px;
 }
 
 .logo-and-secondary-navigation {
@@ -966,7 +1012,8 @@ input[radio] {
   display: flex;
 }
 
-.footer-bottom {
+.footer-bottom,
+.footer-copyright-item {
   display: flex;
 }
 
@@ -1022,8 +1069,10 @@ input[radio] {
   text-decoration: underline;
 }
 
-.footer-copyright-item {
+.footer-copyright-item,
+.footer-bottom {
   background-color: #293449;
+  /* width: 100%; */
 }
 
 .footer-copyright {
@@ -1034,6 +1083,7 @@ input[radio] {
 
 .social-list {
   list-style: none;
+  display: flex;
 }
 
 .social-item-vk::before {
