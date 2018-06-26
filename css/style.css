@@ -283,8 +283,8 @@ a {
 .site-navigation-item {
   padding-top: 20px;
   padding-bottom: 20px;
-  padding-left: 34px;
-  padding-right: 34px; /*??*/
+  padding-left: 30px;
+  padding-right: 30px;
 }
 
 .site-navigation-item:hover {
@@ -984,7 +984,6 @@ input[radio] {
 
 .goods-info {
   background-color: #f2f6f8;
-  width: 940px;
 }
 
 .goods-text {
@@ -1015,6 +1014,8 @@ input[radio] {
 .footer-bottom,
 .footer-copyright-item {
   display: flex;
+
+  background-color: #293449;
 }
 
 .logo-footer {
@@ -1067,12 +1068,6 @@ input[radio] {
 .site-navigation-goods-tool:hover,
 .site-navigation-goods-special-offer:hover {
   text-decoration: underline;
-}
-
-.footer-copyright-item,
-.footer-bottom {
-  background-color: #293449;
-  /* width: 100%; */
 }
 
 .footer-copyright {
