@@ -9,10 +9,10 @@
   </head>
   <body>
     <header class="main-header">
-    <div class="container-block">
       <nav class="main-navigation">
-       <div class="header-top">
-        <a class="main-header-logo">
+         <div class="header-top">
+         <div class="container-block">
+        <a class="main-header-logo"> <!-- доп обертка? -->
           <h2 class="header-logo">Техномарт</h2>
         </a>
          <ul class="order-navigation">
@@ -27,6 +27,8 @@
            <li class="order-navigation-item"><a class="order-navigation-link order-checkout" href="#">Оформить заказ</a></li>
          </ul>
        </div>
+     </div>
+     <div class="container-block">
        <div class="info-contact-user">
          <div class="info-shop">
            <p class="description-shop">
@@ -63,16 +65,16 @@
         <h2 class="visually-hidden">Разделы магазина</h2>
          <ul class="catalog-list catalog-list-one">
           <li class="catalog-item-material">
-            <h3 class="catalog-name">Материалы</h3>
-              <a class="btn catalog-button" href="#">На любой вкус</a>
+            <h3 class="catalog-name catalog-name-and-button">Материалы</h3>
+              <a class="btn catalog-button catalog-name-and-button" href="#">На любой вкус</a>
            </li>
            <li class="catalog-item-tool">
-             <h3 class="catalog-name">Инструмент</h3>
-                <a class="btn catalog-button" href="#">На все случаи</a>
+             <h3 class="catalog-name catalog-name-and-button">Инструмент</h3>
+                <a class="btn catalog-button catalog-name-and-button" href="#">На все случаи</a>
             </li>
             <li class="catalog-item-technology">
-              <h3 class="catalog-name">Техника</h3>
-                 <a class="btn catalog-button" href="#">Для стройки</a>
+              <h3 class="catalog-name catalog-name-and-button">Техника</h3>
+                 <a class="btn catalog-button catalog-name-and-button" href="#">Для стройки</a>
              </li>
            </ul>
            <div class="slider-catalog">
@@ -86,16 +88,15 @@
                     <p class="catalog-slider-text">Соседям на радость!</p>
                       <a class="btn button-catalog-slider" href="#">Открыть каталог</a>
                 </div>
-
               </figure>
             <ul class="catalog-list catalog-list-two">
              <li class="catalog-item-discounts">
-               <h3 class="catalog-name">Скидки 50%</h3>
-                  <a class="btn catalog-button" href="#">На 350 товаров</a>
+               <h3 class="catalog-name catalog-name-and-button">Скидки 50%</h3>
+                  <a class="btn catalog-button catalog-name-and-button" href="#">На 350 товаров</a>
               </li>
               <li class="catalog-item-delivery">
-                <h3 class="catalog-name">Доставка</h3>
-                   <a class="btn catalog-button" href="#">Бесплатно</a>
+                <h3 class="catalog-name catalog-name-and-button">Доставка</h3>
+                   <a class="btn catalog-button catalog-name-and-button" href="#">Бесплатно</a>
                </li>
              </ul>
            </div>
@@ -109,6 +110,10 @@
                <li class="goods-block-item">
                  <img class="goods-image-wrapper" src="img/puncher-1.png"  width="218" height="150" alt="Перфоратор BOSH BF 9000">
                  <h4 class="goods-block-name">Перфоратор BOSH BF 9000</h4>
+                 <div class="invisible-block">
+                   <a class="buy-goods" href="#">Купить</a>
+                   <a class="to-bookmarks">В закладки</a>
+                 </div>
                  <p class="price-goods">
                   <b class="through-price">32500 Р.</b>
                    <a class="btn button-goods-item" href="#">25500 Р.</a>
@@ -117,6 +122,10 @@
              <li class="goods-block-item">
                <img class="goods-image-wrapper" src="img/puncher-2.png"  width="218" height="150" alt="Перфоратор BOSH BFG 3000">
               <h4 class="goods-block-name">Перфоратор BOSH BFG 3000</h4>
+              <div class="invisible-block">
+                <a class="buy-goods" href="#">Купить</a>
+                <a class="to-bookmarks">В закладки</a>
+              </div>
                <p class="price-goods">
                <b class="through-price">22500 Р.</b>
                <a class="btn button-goods-item" href="#">15500 Р.</a>
@@ -125,6 +134,10 @@
            <li class="goods-block-item">
              <img class="goods-image-wrapper" src="img/puncher-3.png"  width="218" height="150" alt="Перфоратор BOSH BF 6000">
              <h4 class="goods-block-name">Перфоратор BOSH BF 6000</h4>
+             <div class="invisible-block">
+               <a class="buy-goods" href="#">Купить</a>
+               <a class="to-bookmarks">В закладки</a>
+             </div>
              <p class="price-goods">
              <b class="through-price">30500 Р.</b>
              <a class="btn button-goods-item" href="#">25500 Р.</a>
@@ -133,6 +146,10 @@
          <li class="goods-block-item">
            <img class="goods-image-wrapper" src="img/puncher-2.png"  width="218" height="150" alt="Перфоратор BOSH BF 2000">
            <h4 class="goods-block-name">Перфоратор BOSH BF 2000</h4>
+           <div class="invisible-block">
+             <a class="buy-goods" href="#">Купить</a>
+             <a class="to-bookmarks">В закладки</a>
+           </div>
            <p class="price-goods">
            <a class="btn buttom-goods-item" href="#">12500 Р.</a>
          </p>
@@ -187,7 +204,9 @@
         </li>
       </ul>
     </section>
+  </div>
     <section class="service-info">
+      <div class="container-block">
       <div class="service-info-block">
     <h2 class="second-caption">Сервисы</h2>
       <p class="specification-text">
