@@ -262,10 +262,12 @@ a {
 
 .account-link::before {
   content: url("../img/icon-user.svg");
+  position: absolute;
 }
 
 .account-icon-link::after {
   content: url("../img/icon-logout.svg");
+  position: absolute;
 }
 
 .account-item,
@@ -276,7 +278,13 @@ a {
   color: #000000;
 
   background-color: #ffffff;
-  width: 299px;
+  /* width: 299px; */
+  position: relative;
+  padding-left: 46px;
+  padding-right: 70px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+
 }
 
 .account-link a {
@@ -340,7 +348,7 @@ a {
 
 .container {
   background-color: #ffffff;
-  margin-top: 60px;
+  /* margin-top: 60px; */
 }
 
 .btn {
@@ -354,6 +362,10 @@ a {
   padding-top: 13px;
   padding-bottom: 8px;
   border-radius: 3px;
+}
+
+.division-catalog {
+  padding-top: 60px;
 }
 
 .catalog-list { /* one two добавлять? */
@@ -685,7 +697,7 @@ a {
 }
 
 .goods-block-list,
-/* .goods-block-item */ {
+.goods-block-item  {
   list-style: none;
   font-size: 18px;
   line-height: 20px;
@@ -928,6 +940,8 @@ a {
 .breadcrumbs-list {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  padding-top: 21px;
 }
 
 .breadcrumbs-home::before {
@@ -941,6 +955,7 @@ a {
   text-transform: uppercase;
   color: #000000;
   font-family: "PT Sans Regular", Arial, sans-serif;
+  padding-right: 40px;
 }
 
 .breadcrumbs-item a {
@@ -954,6 +969,11 @@ a {
   text-transform: uppercase;
   background-color: #f2f6f8;
   width: 940px;
+
+  padding-top: 30px;
+  padding-bottom: 29px;
+  padding-left: 30px;
+  box-sizing: border-box;
 }
 
 .filter-sorting-goods {
@@ -963,6 +983,7 @@ a {
 .filter-block {
   display: flex;
   flex-direction: column;
+  margin-right: 20px;
 }
 
 .filter-caption {
@@ -973,6 +994,8 @@ a {
   font-family: "PT Sans Regular", Arial, sans-serif;
   background-color: #f7f3ec;
   width: 220px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .price-caption {
@@ -1021,7 +1044,12 @@ input[radio] {
   flex-direction: column;
 }
 
-.sorting-list {
+/* .sorting-list {
+  display: flex;
+  flex-wrap: wrap;
+} */
+
+.sorting-caption-and-sorting-item {
   display: flex;
   flex-wrap: wrap;
 }
@@ -1036,6 +1064,8 @@ input[radio] {
   font-family: "PT Sans Regular", Arial, sans-serif;
   background-color: #f7f3ec;
   width: 700px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
 
 .sorting-price a,
@@ -1110,7 +1140,11 @@ input[radio] {
   border: 2px solid #000000;
 }
 
-.pagination-list,
+.pagination-list {
+  display: flex;
+  flex-wrap: wrap; /*?*/
+}
+/* .pagination-list, */
 .pagination-item-button {
   list-style: none;
   font-size: 13px;
@@ -1121,9 +1155,6 @@ input[radio] {
   background-color: transparent;
   width: 38px;
   border: 1px solid #e5e5e5;
-
-  display: flex;
-  flex-wrap: wrap; /*?*/
 }
 
 .pagination-item-button-current {
@@ -1142,6 +1173,8 @@ input[radio] {
 
 .goods-info {
   background-color: #f2f6f8;
+  padding-top: 68px;
+  padding-bottom: 70px;
 }
 
 .goods-text {
