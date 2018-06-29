@@ -61,6 +61,7 @@ a {
   padding-top: 10px;
   padding-bottom: 10px;
   margin: 0;
+  border-bottom: 5px solid #b52933;
 }
 
 .header-logo:hover {
@@ -263,11 +264,13 @@ a {
 .account-link::before {
   content: url("../img/icon-user.svg");
   position: absolute;
+  right: 265px;
 }
 
 .account-icon-link::after {
   content: url("../img/icon-logout.svg");
   position: absolute;
+  right: 220px;
 }
 
 .account-link {
@@ -305,7 +308,8 @@ a {
   color: #32425c;
   text-decoration: underline;
   display: inline-block;
-  flex-wrap: wrap; /*?*/
+  flex-wrap: wrap;
+  padding-left: 30px;
 }
 
 .user-navigation-account-link:hover {
@@ -318,6 +322,7 @@ a {
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
+    border-bottom: 5px solid #293449;
 }
 
 .site-navigation-item,
@@ -960,6 +965,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin: 0;
+  padding: 0;
   padding-top: 21px;
 }
 
@@ -1063,11 +1069,6 @@ input[radio] {
   flex-direction: column;
 }
 
-/* .sorting-list {
-  display: flex;
-  flex-wrap: wrap;
-} */
-
 .sorting-caption-and-sorting-item {
   display: flex;
   flex-wrap: wrap;
@@ -1117,6 +1118,11 @@ input[radio] {
   content: url("../img/icon-sorting-bottom.svg")
 }
 
+.goods-block-item-catalog {
+  margin-right: 17px;
+  margin-bottom: 25px;
+}
+
 .goods-block-list {
   display: flex;
   flex-wrap: wrap;
@@ -1164,9 +1170,10 @@ input[radio] {
 
 .pagination-list {
   display: flex;
-  flex-wrap: wrap; /*?*/
+  flex-wrap: wrap;
+  list-style: none;
 }
-/* .pagination-list, */
+
 .pagination-item-button {
   list-style: none;
   font-size: 13px;
@@ -1177,9 +1184,10 @@ input[radio] {
   background-color: transparent;
   width: 38px;
   border: 1px solid #e5e5e5;
+  margin-right: 10px;
 }
 
-.pagination-item-button-current {
+.button-current {
   color: #ffffff;
   background-color: #ee3643;
 }
@@ -1191,6 +1199,7 @@ input[radio] {
   background-color: transparent;
   border: 1px solid#999999;
   width: 140px;
+  border: 1px solid #e5e5e5;
 }
 
 .goods-info {
@@ -1250,6 +1259,8 @@ input[radio] {
   padding-bottom: 15px;
   margin: 0;
   margin-right: 170px;
+
+  border-bottom: 5px solid #b52933;
 }
 
 .secondary-navigation-info-list {
