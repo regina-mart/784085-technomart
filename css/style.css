@@ -64,6 +64,10 @@ a {
   border-bottom: 5px solid #b52933;
 }
 
+/* .main-header-logo {
+  border-bottom: 5px solid #b52933;
+} */
+
 .header-logo:hover {
   background-color: #ca2c37;
 }
@@ -696,6 +700,54 @@ a {
   position: relative;
   margin: 0;
   padding: 0;
+}
+
+.bosch {
+  padding-top: 50px;
+  padding-left: 43px;
+  box-sizing: border-box;
+}
+
+.makita {
+  padding-top: 49px;
+  padding-left: 48px;
+  box-sizing: border-box;
+}
+
+.dewalt {
+  padding-top: 47px;
+  padding-left: 37px;
+  box-sizing: border-box;
+}
+
+.interskol {
+  padding-top: 56px;
+  padding-left: 22px;
+  box-sizing: border-box;
+}
+
+.hitachi {
+  padding-top: 58px;
+  padding-left: 27px;
+  box-sizing: border-box;
+}
+
+.lg {
+  padding-top: 33px;
+  padding-left: 48px;
+  box-sizing: border-box;
+}
+
+.aeg {
+  padding-top: 27px;
+  padding-left: 31px;
+  box-sizing: border-box;
+}
+
+.metabo {
+  padding-top: 40px;
+  padding-left: 8px;
+  box-sizing: border-box;
 }
 
 .goods-manufacturer-division {
