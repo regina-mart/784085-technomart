@@ -45,6 +45,7 @@ a {
 
 .header-top-container {
   display: flex;
+  position: relative;
 }
 
 .header-logo {
@@ -62,11 +63,9 @@ a {
   padding-bottom: 10px;
   margin: 0;
   border-bottom: 5px solid #b52933;
+  position: absolute;
+  z-index: 1;
 }
-
-/* .main-header-logo {
-  border-bottom: 5px solid #b52933;
-} */
 
 .header-logo:hover {
   background-color: #ca2c37;
@@ -78,6 +77,7 @@ a {
   margin: 0;
   padding: 0;
   flex-wrap: wrap;
+  padding-left: 220px;
 }
 
 .product-search,
@@ -200,6 +200,9 @@ a {
   height: 45px;
   text-align: center;
   margin: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .address-shop {
@@ -322,11 +325,10 @@ a {
 
 .site-navigation {
     display: flex;
-    justify-content: center; /*?*/
+    justify-content: flex-start;
     margin: 0;
     padding: 0;
     flex-wrap: wrap;
-    border-bottom: 5px solid #293449;
 }
 
 .site-navigation-item,
@@ -343,10 +345,11 @@ a {
   padding-left: 30px;
   padding-right: 30px;
   background-color: #32425c;
+    border-bottom: 5px solid #293449;
 }
 
 .site-navigation-item:first-child {
-  padding-left: 52px;
+  padding-left: 60px;
 }
 
 .site-navigation-item:last-child {
@@ -359,7 +362,6 @@ a {
 
 .container {
   background-color: #ffffff;
-  /* margin-top: 60px; */
 }
 
 .btn {
@@ -379,7 +381,7 @@ a {
   padding-top: 60px;
 }
 
-.catalog-list { /* one two добавлять? */
+.catalog-list {
   flex-wrap: wrap;
 }
 
@@ -434,7 +436,6 @@ a {
 }
 
 .catalog-name-and-button {
-  /* margin-left: 25px; */
   margin: 0;
 }
 
@@ -518,6 +519,7 @@ a {
 .catalog-slider::after {
   content: url("../img/slider-icon-left.svg");
   position: absolute;
+  left: 22px;
   bottom: 104px;
 }
 
@@ -596,7 +598,7 @@ a {
   width: 300px;
   min-height: 123px;
   padding-left: 25px;
-  padding-bottom: 22px;
+  padding-bottom: 15px;
   box-sizing: border-box;
 
   position: relative;
@@ -624,7 +626,7 @@ a {
   width: 300px;
   min-height: 123px;
   padding-left: 25px;
-  padding-bottom: 22px;
+  padding-bottom: 15px;
   box-sizing: border-box;
 
   position: relative;
@@ -706,48 +708,72 @@ a {
   padding-top: 50px;
   padding-left: 43px;
   box-sizing: border-box;
+  width: 218px;
+  min-height: 143px;
+  display: flex;
 }
 
 .makita {
   padding-top: 49px;
   padding-left: 48px;
   box-sizing: border-box;
+  width: 218px;
+  min-height: 143px;
+  display: flex;
 }
 
 .dewalt {
   padding-top: 47px;
   padding-left: 37px;
   box-sizing: border-box;
+  width: 218px;
+  min-height: 143px;
+  display: flex;
 }
 
 .interskol {
   padding-top: 56px;
   padding-left: 22px;
   box-sizing: border-box;
+  width: 218px;
+  min-height: 143px;
+  display: flex;
 }
 
 .hitachi {
   padding-top: 58px;
   padding-left: 27px;
   box-sizing: border-box;
+  width: 218px;
+  min-height: 143px;
+  display: flex;
 }
 
 .lg {
   padding-top: 33px;
   padding-left: 48px;
   box-sizing: border-box;
+  width: 218px;
+  min-height: 143px;
+  display: flex;
 }
 
 .aeg {
   padding-top: 27px;
   padding-left: 31px;
   box-sizing: border-box;
+  width: 218px;
+  min-height: 143px;
+  display: flex;
 }
 
 .metabo {
   padding-top: 40px;
   padding-left: 8px;
   box-sizing: border-box;
+  width: 218px;
+  min-height: 143px;
+  display: flex;
 }
 
 .goods-manufacturer-division {
@@ -795,8 +821,8 @@ a {
 }
 
 .manufacturer-block-item {
- width: 218px;
- min-height: 143px;
+ /* width: 218px;
+ min-height: 143px; */
  margin-top: 0;
  margin-right: 20px;
  margin-bottom: 20px;
@@ -1293,8 +1319,6 @@ input[radio] {
   display: flex;
 
   background-color: #293449;
-  /* padding-top: 40px;
-  padding-bottom: 35px; */
 }
 
 .logo-footer {
