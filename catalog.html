@@ -47,7 +47,7 @@
            <a class="account-link" href="#">Равшан Джамшутович</a>
         </li>
         <li class="account-item">
-          <a class="account-icon-link  hidden-text">Выход</a>
+          <a class="account-icon-link hidden-text">Выход</a>
         </li>
       </ul>
        <ul class="user-navigation-account-list">
@@ -85,33 +85,59 @@
         <form action="#" method="post">
           <div class="price-list">
             <h3 class="price-caption">Цена:</h3>
-             <input type="range" name="price" id="price" min="0" max="30000" step="1">
+            <div class="range-controls">
+              <div class="scale">
+                <div class="bar"></div>
+              </div>
+              <div class="toggle min-toggle"></div>
+              <div class="toggle max-toggle"></div>
+            </div>
+            <div class="price-controls">
+              <input class="price-min" type="text" name="price-min" value="0">
+              <span>—</span>
+              <input class="price-max" type="text" name="price-min" value="30000">
+            </div>
+            </div>
           </div>
           <div class="output-area">
             <output name="price-output">
           </div>
           <div class="manufacturer-list">
             <h3 class="manufacturer-caption">Производители:</h3>
-             <input type="checkbox" name="Bosh" id="bosh">
-              <label for="bosh">Bosh</label>
-             <input type="checkbox" name="Interskol" id="interskol">
-              <label for="interskol">Интерскол</label>
-             <input type="checkbox" name="Makita" id="makita">
-              <label for="makita">Makita</label>
-             <input type="checkbox" name="Dewalt" id="dewalt">
-              <label for="dewalt">Dewalt</label>
-             <input type="checkbox" name="Hitachi" id="hitachi">
-               <label for="hitachi">Hitachi</label>
+            <div class="checkbox-container">
+             <input class="checkbox-input visually-hidden" type="checkbox" name="Bosh" id="bosh">
+              <label class="label-text" for="bosh">Bosh</label>
+            </div>
+            <div class="checkbox-container">
+             <input class="checkbox-input visually-hidden" type="checkbox" name="Interskol" id="interskol">
+              <label class="label-text" for="interskol">Интерскол</label>
+            </div>
+            <div class="checkbox-container">
+             <input class="checkbox-input visually-hidden" type="checkbox" name="Makita" id="makita">
+              <label class="label-text" for="makita">Makita</label>
+            </div>
+            <div class="checkbox-container">
+             <input class="checkbox-input visually-hidden" type="checkbox" name="Dewalt" id="dewalt">
+              <label class="label-text" for="dewalt">Dewalt</label>
+            </div>
+            <div class="checkbox-container">
+             <input class="checkbox-input visually-hidden" type="checkbox" name="Hitachi" id="hitachi">
+               <label class="label-text" for="hitachi">Hitachi</label>
+             </div>
            </div>
            <div class="food-goods-list">
              <h3 class="food-caption">Питание</h3>
-             <input type="radio" name="food" id="battery" value="battery">
-               <label for="battery">Аккумуляторные</label>
-             <input type="radio" name="food"  id="net" value="net">
-               <label for="net">Сетевые</label>
+             <div class="checkbox-container">
+             <input class="radio-input visually-hidden" type="radio" name="food" id="battery" value="battery">
+               <label class="radio-label-text" for="battery">Аккумуляторные</label>
+             </div>
+             <div class="checkbox-container">
+             <input class="radio-input visually-hidden" type="radio" name="food"  id="net" value="net">
+               <label class="radio-label-text" for="net">Сетевые</label>
+             </div>
            </div>
-           <div class="button">
-             <input type="submit" value="Показать">
+           <div class="button-filter">
+             <input class="btn filter-button" type="submit" value="Показать">
            </div>
          </form>
       </section>
@@ -141,7 +167,7 @@
   </div>
      <ul class="goods-block-list">
       <li class="goods-block-item goods-block-item-catalog">
-          <img class="goods-image-wrapper" src="img/puncher-2.png"  width="218" height="150" alt="Перфоратор BOSH BFG 3000">
+          <img class="goods-image-wrapper" src="img/puncher-2.png"  width="140" height="100" alt="Перфоратор BOSH BFG 3000">
          <h3 class="goods-block-name">Перфоратор BOSH BFG 3000</h3>
          <div class="invisible-block">
            <a class="buy-goods" href="#">Купить</a>
@@ -153,7 +179,7 @@
         </p>
       </li>
       <li class="goods-block-item goods-block-item-catalog">
-          <img class="goods-image-wrapper" src="img/puncher-3.png"  width="218" height="150" alt="Перфоратор BOSH BFG 6000">
+          <img class="goods-image-wrapper" src="img/puncher-3.png"  width="156" height="94" alt="Перфоратор BOSH BFG 6000">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 6000</h3>
         <div class="invisible-block">
           <a class="buy-goods" href="#">Купить</a>
@@ -165,7 +191,7 @@
         </p>
       </li>
       <li class="goods-block-item goods-block-item-catalog">
-          <img class="goods-image-wrapper" src="img/puncher-2.png"  width="218" height="150" alt="Перфоратор BOSH BFG 2000">
+          <img class="goods-image-wrapper" src="img/puncher-2.png"  width="140" height="100" alt="Перфоратор BOSH BFG 2000">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 2000</h3>
         <div class="invisible-block">
           <a class="buy-goods" href="#">Купить</a>
@@ -176,7 +202,7 @@
         </p>
       </li>
       <li class="goods-block-item goods-block-item-catalog">
-          <img class="goods-image-wrapper" src="img/puncher-2.png"  width="218" height="150" alt="Перфоратор BOSH BFG 3000">
+          <img class="goods-image-wrapper" src="img/puncher-2.png"  width="140" height="100" alt="Перфоратор BOSH BFG 3000">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 3000</h3>
         <div class="invisible-block">
           <a class="buy-goods" href="#">Купить</a>
@@ -188,7 +214,7 @@
         </p>
       </li>
       <li class="goods-block-item goods-block-item-catalog">
-          <img class="goods-image-wrapper" src="img/puncher-3.png"  width="218" height="150" alt="Перфоратор BOSH BFG 6000">
+          <img class="goods-image-wrapper" src="img/puncher-3.png"  width="156" height="94" alt="Перфоратор BOSH BFG 6000">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 6000</h3>
         <div class="invisible-block">
           <a class="buy-goods" href="#">Купить</a>
@@ -200,7 +226,7 @@
         </p>
       </li>
       <li class="goods-block-item goods-block-item-catalog">
-          <img class="goods-image-wrapper" src="img/puncher-2.png"  width="218" height="150" alt="Перфоратор BOSH BFG 2000">
+          <img class="goods-image-wrapper" src="img/puncher-2.png"  width="140" height="100" alt="Перфоратор BOSH BFG 2000">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 2000</h3>
         <div class="invisible-block">
           <a class="buy-goods" href="#">Купить</a>
@@ -211,7 +237,7 @@
         </p>
       </li>
       <li class="goods-block-item goods-block-item-catalog">
-          <img class="goods-image-wrapper" src="img/puncher-2.png"  width="218" height="150" alt="Перфоратор BOSH BFG 3000">
+          <img class="goods-image-wrapper" src="img/puncher-2.png"  width="140" height="100" alt="Перфоратор BOSH BFG 3000">
          <h3 class="goods-block-name">Перфоратор BOSH BFG 3000</h3>
          <div class="invisible-block">
            <a class="buy-goods" href="#">Купить</a>
@@ -223,7 +249,7 @@
         </p>
       </li>
       <li class="goods-block-item goods-block-item-catalog">
-          <img class="goods-image-wrapper" src="img/puncher-3.png"  width="218" height="150" alt="Перфоратор BOSH BFG 6000">
+          <img class="goods-image-wrapper" src="img/puncher-3.png"  width="156" height="94" alt="Перфоратор BOSH BFG 6000">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 6000</h3>
         <div class="invisible-block">
           <a class="buy-goods" href="#">Купить</a>
@@ -235,7 +261,7 @@
         </p>
       </li>
       <li class="goods-block-item goods-block-item-catalog">
-          <img class="goods-image-wrapper" src="img/puncher-2.png"  width="218" height="150" alt="Перфоратор BOSH BFG 2000">
+          <img class="goods-image-wrapper" src="img/puncher-2.png"  width="140" height="100" alt="Перфоратор BOSH BFG 2000">
         <h3 class="goods-block-name">Перфоратор BOSH BFG 2000</h3>
         <div class="invisible-block">
           <a class="buy-goods" href="#">Купить</a>
