@@ -24,7 +24,6 @@ body {
 
 a {
   text-decoration: none;
-  /* display: inline-block; */
 }
 
 .main-header {
@@ -340,8 +339,8 @@ a {
 
 .account-icon-link {
   position: relative;
-  width: 10px;
-  height: 10px;
+  width: 40px;
+  height: 40px;
   display: inline-block;
 }
 
@@ -355,8 +354,10 @@ a {
   background-repeat: no-repeat;
   content: "";
   position: absolute;
-  left: 108px;
-  bottom: 25px;
+  left: 0;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
 }
 
 .account-link-name {
@@ -388,8 +389,9 @@ a {
 
 .user-navigation-account {
   display: flex;
-  flex-wrap: wrap;
+  /* flex-wrap: wrap; */
   margin: 0;
+  position: relative;
 }
 
 .user-navigation-account-list,
@@ -403,6 +405,8 @@ a {
   flex-wrap: wrap;
   padding-left: 30px;
   margin: 0;
+  padding-top: 2px;
+  padding-left: 29px;
 }
 
 .user-navigation-account-link:hover {
@@ -1322,24 +1326,34 @@ a {
 
 .breadcrumbs-home::before {
   content: url("../img/icon-home.svg");
+  position: absolute;
+  top: 22px;
+  left: -2px;
 }
 
 .breadcrumbs-home::after {
   content: url("../img/breadcrumbs.svg");
   position: absolute;
-  left: 83px;
+  top: 22px;
+  left: 28px;
+}
+
+.breadcrumbs-catalog {
+  padding-left: 16px;
 }
 
 .breadcrumbs-catalog::after {
   content: url("../img/breadcrumbs.svg");
   position: absolute;
-  left: 175px;
+  left: 123px;
+  top: 22px;
 }
 
 .breadcrumbs-tool::after {
   content: url("../img/breadcrumbs.svg");
   position: absolute;
-  left: 295px;
+  left: 243px;
+  top: 22px;
 }
 
 .breadcrumbs-item {
@@ -1357,8 +1371,8 @@ a {
 }
 
 .division-name {
-  font-size: 30px;
-  line-height: 30px;
+  font-size: 29px;
+  line-height: 32px;
   color: #32425c;
   text-transform: uppercase;
   background-color: #f2f6f8;
@@ -1366,7 +1380,7 @@ a {
 
   padding-top: 30px;
   padding-bottom: 29px;
-  padding-left: 30px;
+  padding-left: 27px;
   box-sizing: border-box;
 }
 
@@ -1475,7 +1489,7 @@ a {
 }
 
 .price-max {
-	margin-left: 10px;
+	margin-left: 4px;
 }
 
 .manufacturer-caption {
