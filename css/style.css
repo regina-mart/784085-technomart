@@ -134,6 +134,12 @@ a {
   background-color: #212a3a;
 }
 
+.order-bookmarks-catalog {
+  width: 158px;
+  padding-left: 24px;
+  box-sizing: border-box;
+}
+
 .order-basket::before {
   content: url("../img/cart-icon.svg");
 
@@ -146,7 +152,7 @@ a {
   font-size: 17px;
   background-color: #293449;
   width: 140px;
-  padding-top: 14px;
+  padding-top: 15px;
   padding-bottom: 14px;
   padding-left: 11px;
   display: inline-block;
@@ -158,6 +164,25 @@ a {
 
 .order-basket:hover {
   background-color: #212a3a;
+}
+
+.order-basket-catalog {
+  background-color: #ee3643;
+  width: 150px;
+  box-sizing: border-box;
+  padding-left: 23px;
+}
+
+.order-basket-catalog::before {
+  content: url("../img/cart-icon-catalog.svg");
+
+  position: absolute;
+  left: 18px;
+  bottom: 14px;
+}
+
+.order-basket-catalog:hover {
+  background-color: none;
 }
 
 .order-checkout {
@@ -172,6 +197,10 @@ a {
 
 .order-checkout:hover {
   background-color: #5fbb2d;
+}
+
+.order-checkout-catalog {
+  width: 149px;
 }
 
 .info-contact-user {
@@ -192,11 +221,21 @@ a {
   margin-right: 42px;
 }
 
+.description-shop-catalog {
+  margin-right: 70px;
+  width: 197px;
+}
+
 .contacts-shop {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 0;
+}
+
+.contacts-shop-catalog {
+  padding-top: 1px;
+  margin-right: 11px;
 }
 
 .border-number-shop {
@@ -295,19 +334,39 @@ a {
 .account-link::before {
   content: url("../img/icon-user.svg");
   position: absolute;
-  right: 265px;
+  right: 199px;
+  top: 3px;
 }
 
 .account-icon-link {
   position: relative;
   width: 10px;
   height: 10px;
+  display: inline-block;
 }
 
 .account-icon-link::after {
-  content: url("../img/icon-logout.svg");
+  /* content: url("../img/icon-logout.svg");
   position: absolute;
-  right: 43px;
+  left: 108px;
+  bottom: 25px; */
+
+  background-image: url("../img/icon-logout.svg");
+  background-repeat: no-repeat;
+  content: "";
+  position: absolute;
+  left: 108px;
+  bottom: 25px;
+}
+
+.account-link-name {
+  width: 299px;
+  min-height: 45px;
+  align-items: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  padding-left: 47px;
+  padding-top: 12px;
 }
 
 .account-link {
@@ -316,12 +375,7 @@ a {
   line-height: 21px;
   color: #000000;
 
-  background-color: #ffffff;
   position: relative;
-  padding-left: 46px;
-  padding-right: 70px;
-  padding-top: 12px;
-  padding-bottom: 14px;
 }
 
 .account-item {
@@ -335,6 +389,7 @@ a {
 .user-navigation-account {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
 }
 
 .user-navigation-account-list,
@@ -347,6 +402,7 @@ a {
   display: inline-block;
   flex-wrap: wrap;
   padding-left: 30px;
+  margin: 0;
 }
 
 .user-navigation-account-link:hover {
