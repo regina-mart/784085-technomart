@@ -22,8 +22,8 @@
                 <input type="search" name="search" id="search">
             </form>
             </li>
-           <li class="order-navigation-item"><a class="order-navigation-link order-bookmarks" href="#">Закладки</a></li>
-           <li class="order-navigation-item"><a class="order-navigation-link order-basket" href="#">Корзина</a></li>
+           <li class="order-navigation-item"><a class="order-navigation-link order-bookmarks" href="#">Закладки: 0</a></li>
+           <li class="order-navigation-item"><a class="order-navigation-link order-basket" href="#">Корзина: 0</a></li>
            <li class="order-navigation-item"><a class="order-navigation-link order-checkout" href="#">Оформить заказ</a></li>
          </ul>
        </div>
@@ -38,7 +38,9 @@
          </p>
        </div>
        <div class="contacts-shop">
-         <p class="number-shop">+7(812)555-05-55</p>
+         <div class="border-number-shop">
+         <p class="number-shop">+7 (812) 555-05-55</p>
+       </div>
          <p class="address-shop">г. Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
        </div>
          <ul class="user-navigation">
@@ -65,16 +67,16 @@
         <h2 class="visually-hidden">Разделы магазина</h2>
          <ul class="catalog-list catalog-list-one">
           <li class="catalog-item-material">
-            <h3 class="catalog-name catalog-name-and-button">Материалы</h3>
-              <a class="btn catalog-button catalog-name-and-button" href="#">На любой вкус</a>
+            <h3 class="catalog-name catalog-name-and-button name-material">Материалы</h3>
+              <a class="btn catalog-button catalog-name-and-button button-material" href="#">На любой вкус</a>
            </li>
            <li class="catalog-item-tool">
-             <h3 class="catalog-name catalog-name-and-button">Инструмент</h3>
-                <a class="btn catalog-button catalog-name-and-button" href="#">На все случаи</a>
+             <h3 class="catalog-name catalog-name-and-button name-tool">Инструмент</h3>
+                <a class="btn catalog-button catalog-name-and-button button-tool" href="#">На все случаи</a>
             </li>
             <li class="catalog-item-technology">
-              <h3 class="catalog-name catalog-name-and-button">Техника</h3>
-                 <a class="btn catalog-button catalog-name-and-button" href="#">Для стройки</a>
+              <h3 class="catalog-name catalog-name-and-button name-technology">Техника</h3>
+                 <a class="btn catalog-button catalog-name-and-button button-technology" href="#">Для стройки</a>
              </li>
            </ul>
            <div class="slider-catalog">
@@ -91,24 +93,24 @@
               </figure>
             <ul class="catalog-list catalog-list-two">
              <li class="catalog-item-discounts">
-               <h3 class="catalog-name catalog-name-and-button">Скидки 50%</h3>
-                  <a class="btn catalog-button catalog-name-and-button" href="#">На 350 товаров</a>
+               <h3 class="catalog-name catalog-name-and-button name-discounts name-discounts">Скидки 50%</h3>
+                  <a class="btn catalog-button catalog-name-and-button button-discounts button-discounts" href="#">На 350 товаров</a>
               </li>
               <li class="catalog-item-delivery">
-                <h3 class="catalog-name catalog-name-and-button">Доставка</h3>
-                   <a class="btn catalog-button catalog-name-and-button" href="#">Бесплатно</a>
+                <h3 class="catalog-name catalog-name-and-button name-delivery">Доставка</h3>
+                   <a class="btn catalog-button catalog-name-and-button button-delivery" href="#">Бесплатно</a>
                </li>
              </ul>
            </div>
            </section>
            <div class="goods-manufacturer-division">
-           <h2 class="second-caption second-caption-goods-manufacturer">Популярные товары:</h2>
-            <a class="btn button-goods-manufacturer" href="#">Все популярные товары</a>
+           <h2 class="second-caption second-caption-goods-manufacturer second-caption-goods">Популярные товары:</h2>
+            <a class="btn button-goods-manufacturer button-goods" href="#">Все популярные товары</a>
           </div>
              <section class="goods-block">
               <ul class="goods-block-list">
                <li class="goods-block-item">
-                 <img class="goods-image-wrapper" src="img/puncher-1.png"  width="200" height="94" alt="Перфоратор BOSH BF 9000">
+                 <img class="goods-image-wrapper puncher-one" src="img/puncher-1.png"  width="200" height="94" alt="Перфоратор BOSH BF 9000">
                  <h4 class="goods-block-name">Перфоратор BOSH BF 9000</h4>
                  <div class="invisible-block">
                    <a class="buy-goods" href="#">Купить</a>
@@ -120,7 +122,7 @@
                  </p>
                </li>
              <li class="goods-block-item">
-               <img class="goods-image-wrapper" src="img/puncher-2.png"  width="140" height="100" alt="Перфоратор BOSH BFG 3000">
+               <img class="goods-image-wrapper puncher-two" src="img/puncher-2.png"  width="140" height="100" alt="Перфоратор BOSH BFG 3000">
               <h4 class="goods-block-name">Перфоратор BOSH BFG 3000</h4>
               <div class="invisible-block">
                 <a class="buy-goods" href="#">Купить</a>
@@ -132,7 +134,7 @@
              </p>
            </li>
            <li class="goods-block-item">
-             <img class="goods-image-wrapper" src="img/puncher-3.png"  width="156" height="94" alt="Перфоратор BOSH BF 6000">
+             <img class="goods-image-wrapper puncher-three" src="img/puncher-3.png"  width="156" height="94" alt="Перфоратор BOSH BF 6000">
              <h4 class="goods-block-name">Перфоратор BOSH BF 6000</h4>
              <div class="invisible-block">
                <a class="buy-goods" href="#">Купить</a>
@@ -144,8 +146,8 @@
            </p>
          </li>
          <li class="goods-block-item">
-           <img class="goods-image-wrapper" src="img/puncher-2.png"  width="140" height="100" alt="Перфоратор BOSH BF 2000">
-           <h4 class="goods-block-name">Перфоратор BOSH BF 2000</h4>
+           <img class="goods-image-wrapper puncher-four" src="img/puncher-2.png"  width="140" height="100" alt="Перфоратор BOSH BF 2000">
+           <h4 class="goods-block-name goods-block-name-four">Перфоратор BOSH BF 2000</h4>
            <div class="invisible-block">
              <a class="buy-goods" href="#">Купить</a>
              <a class="to-bookmarks">В закладки</a>
@@ -157,8 +159,8 @@
      </ul>
     </section>
     <div class="goods-manufacturer-division">
-    <h2 class="second-caption second-caption-goods-manufacturer">Популярные производители:</h2>
-     <a class="btn button-goods-manufacturer" href="#">Все производители</a>
+    <h2 class="second-caption second-caption-goods-manufacturer second-caption-manufacturer">Популярные производители:</h2>
+     <a class="btn button-goods-manufacturer button-manufacturer" href="#">Все производители</a>
    </div>
       <section class="manufacturer-block">
        <ul class="manufacturer-block-list">
@@ -208,7 +210,7 @@
     <section class="service-info">
       <div class="container-block service-info-and-slider">
       <div class="service-info-block">
-    <h2 class="second-caption">Сервисы</h2>
+    <h2 class="second-caption second-caption-service">Сервисы</h2>
       <p class="specification-text">
         Хороший интернет-магазин отличается от плохого не только ценами!
         Мы стараемся изо всех сил, чтобы сделать ваши покупки приятными.
@@ -218,7 +220,7 @@
       <div class="service-slider-link">
         <ul class="service-slider-list">
           <li class="service-slider-item">
-            <a class="btn slider-delivery-button" href=#>Доставка</a>
+            <a class="btn slider-delivery-button  slider-delivery-current" href=#>Доставка</a>
           </li>
           <li class="service-slider-item">
             <a class="btn slider-guarantee-button" href=#>Гарантия</a>
@@ -234,7 +236,7 @@
              <h2 class="service-caption">Доставка</h2>
               <p class="service-slider-text">Мы с удовольствием доставим ваш товар прямо
                к вашему подъезду совершенно бесплатно!
-               Ведь мы неплохо заработаем,
+               Ведь мы неплохо заработаем,<br>
                поднимая его на ваш этаж!</p>
            </li>
            <li class="service-slider-guarantee">
@@ -259,13 +261,13 @@
      <div class="company-and-contact">
      <div class="about-company-block">
      <section class="about-company">
-      <h2 class="second-caption">Компания "Техномарт"</h2>
+      <h2 class="second-caption">Компания <q>Техномарт</q></h2>
        <p class="about-company-text">
          Настоящий мужской шоппинг начинается здесь! Огромный выбор товаров для ремонта и
          строительства не оставит равнодушными любителей сэкономить на гастарбайтерах.
        </p>
        <p class="about-company-text">
-         Мы можем доставить ваш товар в самые отдалённые точки России!
+         Мы можем доставить ваш товар в самые отдалённые точки России!<br>
          Техномарт работает со многими транспортными компаниями:
        </p>
        <ul class="transport-companies-list">
@@ -279,7 +281,7 @@
      <div class="contact-info">
       <h2 class="second-caption">Контакты</h2>
        <p class="map-location">
-           Вы можете забрать сами,
+           Вы можете забрать товар сами,
            заехав в наш офис:
        </p>
         <a class="map-image-location-link" href="#">
@@ -330,7 +332,7 @@
     <div class="footer-bottom">
       <div class="container-block footer-bottom">
       <p class="footer-copyright">
-        &copy; 2010-2017 Компания "Техномарт"
+        &copy; 2010-2017 Компания <q>Техномарт</q>
         Все права защищены
       </p>
         <ul class="social-list">
@@ -351,20 +353,24 @@
    </footer>
    <section class="modal modal-login">
      <form action="/echo" method="post">
-       <div class="half-width">
-       <label for="name">Ваше имя:</label>
-         <input type="text" name="name" id="name" placeholder="Имя Фамилия">
+       <div class="name-mail">
+       <div class="fill-fields">
+       <label class="text-modal-login name-login" for="name">Ваше имя:</label>
+         <input class="half-width name-login-form" type="text" name="name" id="name" placeholder="Имя Фамилия">
        </div>
-       <div class="half-width">
-         <label for="email">Ваш e-mail:</label>
-         <input type="email" name="email" id="email" placeholder="email@example.com">
+       <div class="fill-fields">
+         <label class="text-modal-login mail-login" for="email">Ваш e-mail:</label>
+         <input class="half-width mail-login-form" type="email" name="email" id="email" placeholder="email@example.com">
        </div>
-       <label for="text-letter">Текст письма:</label>
-       <textarea name="text-letter" id="text-letter" rows="6" placeholder="В свободной форме"></textarea>
-     <div class="buttons">
-       <input type="submit" value="Отправить">
-     </div>
-     <span class="modal-close">x</span>
+       </div>
+       <div class="text-letter-fill-fields">
+       <label class="text-modal-login text-letter" for="text-letter">Текст письма:</label>
+       <textarea class="text-letter-form" name="text-letter" id="text-letter" rows="6" placeholder="В свободной форме"></textarea>
+       </div>
+       <div class="background-button">
+         <button class="btn buttons-modal-login">Отправить</button>
+       </div>
+       <button class="modal-login-close hidden-text">Закрыть</button>
    </form>
    </section>
  </body>
