@@ -69,6 +69,10 @@ a {
   background-color: #ca2c37;
 }
 
+.header-logo:active {
+  background-color: #ba2732;
+}
+
 .order-navigation {
   display: flex;
   align-items: center;
@@ -165,6 +169,10 @@ a {
   bottom: 12px;
 }
 
+/* .order-bookmarks:hover::before {
+  color: red;
+} */
+
 .order-bookmarks {
   font-size: 17px;
   background-color: #293449;
@@ -180,6 +188,10 @@ a {
 
 .order-bookmarks:hover {
   background-color: #212a3a;
+}
+
+.order-bookmarks:active {
+  background-color: #161d29;
 }
 
 .order-bookmarks-catalog {
@@ -214,6 +226,10 @@ a {
   background-color: #212a3a;
 }
 
+.order-basket:active {
+  background-color: #161d29;
+}
+
 .order-basket-catalog {
   background-color: #ee3643;
   width: 150px;
@@ -230,7 +246,7 @@ a {
 }
 
 .order-basket-catalog:hover {
-  background-color: none;
+  background-color: red;
 }
 
 .order-checkout {
@@ -245,6 +261,10 @@ a {
 
 .order-checkout:hover {
   background-color: #5fbb2d;
+}
+
+.order-checkout:active {
+  background-color: #518534;
 }
 
 .order-checkout-catalog {
