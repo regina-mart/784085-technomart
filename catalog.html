@@ -112,35 +112,36 @@
             <h3 class="manufacturer-caption">Производители:</h3>
             <div class="filter-sections">
             <div class="checkbox-container">
-             <input class="checkbox-input visually-hidden" type="checkbox" name="Bosh" id="bosh">
-              <label class="label-text" for="bosh">Bosh</label>
+             <input class="checkbox-input visually-hidden" type="checkbox" name="bosch" id="bosch">
+              <label class="label-text label-text-bosch" for="bosch">Bosch</label>
             </div>
             <div class="checkbox-container">
              <input class="checkbox-input visually-hidden" type="checkbox" name="Interskol" id="interskol">
-              <label class="label-text" for="interskol">Интерскол</label>
+              <label class="label-text label-text-interskol" for="interskol">Интерскол</label>
             </div>
             <div class="checkbox-container">
              <input class="checkbox-input visually-hidden" type="checkbox" name="Makita" id="makita">
-              <label class="label-text" for="makita">Makita</label>
+              <label class="label-text label-text-makita" for="makita">Makita</label>
             </div>
             <div class="checkbox-container">
              <input class="checkbox-input visually-hidden" type="checkbox" name="Dewalt" id="dewalt">
-              <label class="label-text" for="dewalt">Dewalt</label>
+              <label class="label-text label-text-dewalt" for="dewalt">Dewalt</label>
             </div>
             <div class="checkbox-container">
              <input class="checkbox-input visually-hidden" type="checkbox" name="Hitachi" id="hitachi">
-               <label class="label-text" for="hitachi">Hitachi</label>
+               <label class="label-text label-text-hitachi" for="hitachi">Hitachi</label>
              </div>
+             <hr>
            </div>
            <div class="food-goods-list">
              <h3 class="food-caption">Питание</h3>
-             <div class="checkbox-container">
+             <div class="checkbox-container-food">
              <input class="radio-input visually-hidden" type="radio" name="food" id="battery" value="battery">
-               <label class="radio-label-text" for="battery">Аккумуляторные</label>
+               <label class="radio-label-text radio-label-text-battery" for="battery">Аккумуляторные</label>
              </div>
-             <div class="checkbox-container">
+             <div class="checkbox-container-food">
              <input class="radio-input visually-hidden" type="radio" name="food"  id="net" value="net">
-               <label class="radio-label-text" for="net">Сетевые</label>
+               <label class="radio-label-text radio-label-text-net" for="net">Сетевые</label>
              </div>
            </div>
          </div>
@@ -166,10 +167,14 @@
           <a class="sorting-item-link" href="#">По функционалу</a>
         </li>
         <li class="sorting-item">
-         <a class="sorting-item-link sorting-arrow sorting-arrow-top hidden-text" href="#"></a>
+         <a class="sorting-item-link sorting-arrow sorting-arrow-top" href="#">
+           <span class="visually-hidden">По возрастанию</span>
+         </a>
         </li>
         <li class="sorting-item">
-         <a class="sorting-item-link sorting-arrow sorting-arrow-bottom hidden-text" href="#"></a>
+         <a class="sorting-item-link sorting-arrow sorting-arrow-bottom" href="#">
+           <span class="visually-hidden">По убыванию</span>
+         </a>
         </li>
       </ul>
     </div>
@@ -198,7 +203,7 @@
         </div>
         <p class="price-goods">
          <b class="through-price">30500 Р.</b>
-         <a class="btn button-goods-item" href="#">
+         <a class="btn button-goods-item padding" href="#">
            <span class="button-price">25500 Р.</span>
          </a>
         </p>
@@ -299,6 +304,21 @@
         </p>
       </li>
     </ul>
+
+    <!-- <li class="goods-block-item goods-block-item-catalog">
+        <img class="goods-image-wrapper puncher-eight-catalog" src="img/puncher-3.png"  width="156" height="94" alt="Перфоратор BOSH BFG 6000">
+      <h3 class="goods-block-name goods-block-name-catalog">Перфоратор BOSH BFG 6000</h3>
+      <div class="invisible-block">
+        <a class="buy-goods" href="#">Купить</a>
+        <a class="to-bookmarks">В закладки</a>
+      </div>
+      <p class="price-goods">
+       <b class="through-price">30500 Р.</b>
+       <a class="btn button-goods-item" href="#">25500 Р.</a>
+      </p>
+    </li> -->
+
+
     <ul class="pagination-list">
       <li class="pagination-item"><a class="btn pagination-item-button button-current">1</a></li>
       <li class="pagination-item"><a class="btn pagination-item-button" href="#">2</a></li>
