@@ -95,7 +95,9 @@ a {
   content: url("../img/icon-search.svg");
   position: absolute;
   top: 11px;
-  left: 16px;
+  left: 17px;
+  width: 17px;
+  height: 17px;
 }
 
 .product-search {
@@ -167,11 +169,13 @@ a {
   position: absolute;
   left: 25px;
   bottom: 12px;
+  width: 14px;
+  height: 18px;
 }
 
-/* .order-bookmarks:hover::before {
-  color: red;
-} */
+.order-bookmarks:hover::before {
+  opacity: 1;
+}
 
 .order-bookmarks {
   font-size: 17px;
@@ -205,7 +209,9 @@ a {
 
   position: absolute;
   left: 9px;
-  bottom: 13px;
+  bottom: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .order-basket {
@@ -242,7 +248,9 @@ a {
 
   position: absolute;
   left: 18px;
-  bottom: 14px;
+  bottom: 15px;
+  width: 15px;
+  height: 15px;
 }
 
 .order-basket-catalog:hover {
@@ -330,6 +338,8 @@ a {
   position: absolute;
   left: -59px;
   top: 1px;
+  width: 19px;
+  height: 19px;
 }
 
 .address-shop {
@@ -361,6 +371,8 @@ a {
 
   position: absolute;
   right: 86px;
+  width: 20px;
+  height: 17px;
 }
 
 .user-navigation-entry:hover {
@@ -404,6 +416,8 @@ a {
   position: absolute;
   right: 199px;
   top: 3px;
+  width: 20px;
+  height: 18px;
 }
 
 .account-icon-link {
@@ -420,9 +434,11 @@ a {
   content: "";
   position: absolute;
   left: 28px;
-  bottom: -9px;
+  bottom: 14px;
   width: 40px;
   height: 40px;
+  width: 20px;
+  height: 17px;
 }
 
 .account-link-name {
@@ -475,6 +491,16 @@ a {
 
 .user-navigation-account-link:hover {
   color: #ee3643;
+}
+
+.user-navigation-account-item::before {
+  content: url("../img/dot.png");
+
+  position: absolute;
+  left: 147px;
+  top: -3px;
+  width: 4px;
+  height: 5px;
 }
 
 .site-navigation {
@@ -628,7 +654,9 @@ a {
   content: url("../img/icon-materials.svg");
   position: absolute;
   left: 213px;
-  bottom: 20px;
+  bottom: 28px;
+  width: 44px;
+  height: 65px;
 }
 
 .catalog-item-material::before {
@@ -636,6 +664,8 @@ a {
   position: absolute;
   right: 0px;
   top: 0px;
+  width: 60px;
+  height: 59px;
 }
 
 .catalog-item-material {
@@ -667,7 +697,9 @@ a {
 
   position: absolute;
   left: 197px;
-  bottom: 22px;
+  bottom: 30px;
+  width: 75px;
+  height: 61px;
 }
 
 .catalog-item-tool {
@@ -699,7 +731,9 @@ a {
 
   position: absolute;
   left: 191px;
-  bottom: 23px;
+  bottom: 31px;
+  width: 78px;
+  height: 62px;
 }
 
 .catalog-item-technology {
@@ -831,7 +865,9 @@ a {
 
   position: absolute;
   left: 196px;
-  bottom: 18px;
+  bottom: 26px;
+  width: 59px;
+  height: 72px;
 }
 
 .catalog-item-discounts {
@@ -867,7 +903,9 @@ a {
 
   position: absolute;
   left: 191px;
-  bottom: 21px;
+  bottom: 29px;
+  width: 78px;
+  height: 63px;
 }
 
 .catalog-item-delivery {
@@ -1117,17 +1155,6 @@ a {
   border: 1px solid #e5e5e5;
 }
 
-/* .goods-block-item::before {
-  background-image: url("../img/btn-goods-price.svg");
-background-repeat: no-repeat;
-content: "";
-position: absolute;
-width: 141px;
-height: 38px;
-bottom: 20px;
-left: 42px;
-} */
-
 .goods-index-one::before {
   background-image: url("../img/btn-goods-price.svg");
   background-repeat: no-repeat;
@@ -1204,6 +1231,8 @@ left: 42px;
   position: absolute;
   right: 0;
   top: 0;
+  width: 60px;
+  height: 59px;
 }
 
 .goods-catalog-one::before {
@@ -1472,14 +1501,19 @@ left: 42px;
 
   position: absolute;
   left: 471px;
-  bottom: -7px;
+  bottom: 0;
+  width: 468px;
+  height: 261px;
 }
 
 .service-slider-guarantee::after {
   content: url("../img/guarantee.png");
+
   position: absolute;
   left: 540px;
   bottom: 0;
+  width: 389px;
+  height: 283px;
 }
 
 .service-slider-credit::after {
@@ -1488,6 +1522,8 @@ left: 42px;
   position: absolute;
   left: 540px;
   bottom: 0;
+  width: 465px;
+  height: 285px;
 }
 
 .service-slider-text {
@@ -1602,6 +1638,7 @@ left: 42px;
 
 .user-navigation-account-list {
   display: flex;
+  position: relative;
 }
 
 .breadcrumbs-list {
@@ -1618,6 +1655,8 @@ left: 42px;
   position: absolute;
   top: 22px;
   left: -2px;
+  width: 14px;
+  height: 12px;
 }
 
 .breadcrumbs-home::after {
@@ -1824,10 +1863,14 @@ input[checked] {
   position: absolute;
   top: 1px;
   left: 0;
+  width: 23px;
+  height: 23px;
 }
 
 .checkbox-input:checked + .label-text-bosch::before {
   content: url("../img/checkbox-on.svg");
+  width: 27px;
+  height: 23px;
 }
 
 .label-text-interskol::before {
@@ -1835,43 +1878,59 @@ input[checked] {
   position: absolute;
   top: 1px;
   left: 0;
+  width: 23px;
+  height: 23px;
 }
 
 .checkbox-input:checked + .label-text-interskol::before {
   content: url("../img/checkbox-on.svg");
+  width: 27px;
+  height: 23px;
 }
 
 .label-text-makita::before {
   content: url("../img/checkbox-off.svg");
   position: absolute;
-  top: 1px;
+  top: 0;
   left: 0;
+  width: 23px;
+  height: 23px;
 }
 
 .checkbox-input:checked + .label-text-makita::before {
   content: url("../img/checkbox-on.svg");
+  width: 27px;
+  height: 23px;
 }
 
 .label-text-dewalt::before {
   content: url("../img/checkbox-off.svg");
   position: absolute;
-  top: 1px;
+  top: 0;
   left: 0;
+  width: 23px;
+  height: 23px;
 }
 
 .checkbox-input:checked + .label-text-dewalt::before {
   content: url("../img/checkbox-on.svg");
+  width: 27px;
+  height: 23px;
 }
 
 .label-text-hitachi::before {
   content: url("../img/checkbox-off.svg");
   position: absolute;
-  top: 1px;
+  top: 0;
   left: 0;
+  width: 23px;
+  height: 23px;
 }
 
 .checkbox-input:checked + .label-text-hitachi::before {
   content: url("../img/checkbox-on.svg");
+  width: 27px;
+  height: 23px;
 }
 
 .checkbox-container-food {
@@ -1892,12 +1951,16 @@ input[checked] {
   content: url("../img/radio-off.svg");
   padding-right: 12px;
   position: absolute;
-  top: -3px;
-  left: -36px;
+  top: -2px;
+  left: -34px;
+  width: 25px;
+  height: 25px;
 }
 
 .radio-input:checked + .radio-label-text::before {
   content: url("../img/radio-on.svg");
+  width: 25px;
+  height: 25px;
 }
 
 .checkbox-input:disabled ~ .label-text {
