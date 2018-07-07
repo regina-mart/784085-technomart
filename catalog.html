@@ -308,7 +308,7 @@
       <li class="pagination-item"><a class="btn pagination-item-button button-current">1</a></li>
       <li class="pagination-item"><a class="btn pagination-item-button" href="#">2</a></li>
       <li class="pagination-item"><a class="btn pagination-item-button" href="#">3</a></li>
-      <li class="pagination-item"><a class="btn pagination-item-button-next" href="#">Следующая</a></li>
+      <li class="pagination-item"><a class="btn pagination-item-button pagination-item-button-next" href="#">Следующая</a></li>
     </ul>
   </div>
   </section>
@@ -386,9 +386,11 @@
 </footer>
 <section class="modal goods-in-basket">
   <p class="add-goods">Товар добавлен в корзину!</p>
-  <a class="btn button-modal-place-order" href="#">Оформить заказ</a>
-  <button class="button-modal-continue-shopping">Продолжить покупки</button>
-  <span class="modal-close">x</span>
+  <div class="modal-goods">
+  <a class="btn btn-red button-modal-place-order" href="#">Оформить заказ</a>
+  <button class="btn button-modal-continue-shopping">Продолжить покупки</button>
+  </div>
+    <button class="modal-login-close hidden-text">Закрыть</button>
 </section>
 </body>
 </html>
