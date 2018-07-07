@@ -91,15 +91,24 @@ a {
   color: #ffffff;
 }
 
-.product-search::before {
-  content: url("../img/icon-search.svg");
+.product-search-icon {
+  fill: #6a7180;
   position: absolute;
-  top: 11px;
   left: 17px;
-  width: 17px;
-  height: 17px;
-  opacity: 0.3;
+  top: 9px;
 }
+
+.product-search-icon:hover {
+  fill: #ffffff; 949aa4
+}
+
+.product-search-icon:active {
+  fill: #949aa4;
+}
+
+/* .product-search-icon:focus {
+  fill: #ee3534;
+} */
 
 .product-search {
   background-color: #293449;
@@ -109,7 +118,8 @@ a {
   position: relative;
   padding-top: 8px;
   padding-bottom: 8px;
-  padding-right: 26px;
+  padding-right: 74px;
+  position: relative;
 }
 
 .product-search:hover {
@@ -124,59 +134,35 @@ a {
   opacity: 0.5;
 }
 
-/* .block {
-  width: 400px;
-  min-height: 300px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-
-  border: 1px solid green;
-}
-.row {
-  position: relative;
-  display: flex;
-  justify-content: center;
-  width: 250px;
-  min-height: 50px;
-
-  font-family: 'Arial';
-  font-size: 18px;
-  line-height: 24px;
-
-  background-color: crimson;
+.input-search {
+  background-color: #293449;
+  border: none;
 }
 
-.text-input {
-  display: inline-block;
-  width: 200px;
-  min-height: 50px;
-
-  font-family: inherit;
-  font-size: inherit;
-  line-height: inherit;
+.input-search:hover {
+  background-color: #212a3a;
 }
 
 .search-label {
-  position: absolute;
-  top: 10px;
-  left: 30px;
-
-  color: blue;
-
-  transform: translateY (-50%);
+ position: absolute;
+ font-size: 17px;
+ line-height: 18px;
+ color: #fff;
+ top: 12px;
+ left: 48px;
+ -webkit-transform: translateY (-50%);
+ -ms-transform: translateY (-50%);
+ transform: translateY (-50%);
 }
 
-.text-input:focus + .search-label {
-  top: -20px;
-
-  color: black;
-} */
+.main-search-input:focus ~ .search-label{
+  top: -30px;
+}
 
 .order-bookmarks::before {
   content: url("../img/icon-bookmark.svg");
   position: absolute;
-  left: 25px;
+  left: 24px;
   bottom: 12px;
   width: 14px;
   height: 18px;
@@ -213,7 +199,7 @@ a {
 }
 
 .order-bookmarks-catalog {
-  width: 158px;
+  width: 157px;
   padding-left: 24px;
   box-sizing: border-box;
 }
@@ -222,7 +208,7 @@ a {
   content: url("../img/cart-icon.svg");
 
   position: absolute;
-  left: 9px;
+  left: 8px;
   bottom: 15px;
   width: 15px;
   height: 15px;
@@ -300,7 +286,7 @@ a {
 }
 
 .order-checkout-catalog {
-  width: 149px;
+  width: 150px;
 }
 
 .info-contact-user {
@@ -2227,18 +2213,27 @@ input[radio] {
   color: #ee3643;
 }
 
-.sorting-arrow {
+/* .sorting-arrow {
   width: 11px;
   height: 10px;
   display: inline-block;
+} */
+
+.sorting-arrow-top,
+.sorting-arrow-bottom {
+  fill: #c5c5c5;
 }
 
-.sorting-arrow-top::before {
-  content: url("../img/icon-sorting-top.svg");
+.sorting-arrow-top:hover {
+  fill: #000000;
 }
 
-.sorting-arrow-bottom::before {
-  content: url("../img/icon-sorting-bottom.svg")
+.sorting-arrow-bottom:hover {
+  fill: #000000;
+}
+
+.sorting-arrow-current {
+  fill: #ee3634;
 }
 
 .sorting-arrow-top {
@@ -2660,24 +2655,56 @@ input[radio] {
   padding-left: 0;
 }
 
-.social-item {
-  /* padding-right: 25px; */
-  color: #ffffff;
+.social-item-vk-circle {
   background-color: #212a3a;
   border-radius: 50%;
+  position: absolute;
 
   width: 41px;
-  height: 42px;
+  height: 41px;
+  display: inline-block;
+  left: 4px;
+  top: 22px;
+}
+
+.social-item-vk-circle:hover {
+  background-color: #ee3643;
+}
+
+.social-item-fb-circle {
+  background-color: #212a3a;
+  border-radius: 50%;
+  position: absolute;
+
+  width: 41px;
+  height: 41px;
 
   display: inline-block;
-  margin-left: 2px;
+  left: 48px;
+  top: 22px;
 }
 
-.social-item-vk,
-.social-item-fb,
-.social-item-insta {
-
+.social-item-fb-circle:hover {
+  background-color: #ee3643;
 }
+
+.social-item-insta-circle {
+  background-color: #212a3a;
+  border-radius: 50%;
+  position: absolute;
+
+  width: 41px;
+  height: 41px;
+
+  display: inline-block;
+  left: 93px;
+  top: 22px;
+}
+
+.social-item-insta-circle:hover {
+  background-color: #ee3643;
+}
+
 .social-item:last-child {
   padding-right: 0;
 }
@@ -2689,9 +2716,9 @@ input[radio] {
   position: absolute;
   width: 28px;
   height: 15px;
-  top: 35px;
-  left: 11px;
-  background-color: #
+  top: 13px;
+  left: 7px;
+  z-index: 1;
 }
 
 .social-item-fb::before {
@@ -2701,8 +2728,9 @@ input[radio] {
   position: absolute;
   width: 13px;
   height: 22px;
-  top: 32px;
-  left: 63px;
+  top: 10px;
+  left: 15px;
+  z-index: 1;
 }
 
 .social-item-insta::before {
@@ -2712,8 +2740,9 @@ input[radio] {
   position: absolute;
   width: 21px;
   height: 21px;
-  top: 32px;
-  left: 103px;
+  top: 10px;
+  left: 10px;
+  z-index: 1;
 }
 
 .social-button {
