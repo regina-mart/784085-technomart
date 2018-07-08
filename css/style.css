@@ -3297,3 +3297,17 @@ input[radio] {
   background-color: #ffffff;
   border: none;
 }
+
+.modal-map {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+      -ms-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          -webkit-box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.5);
+                  box-shadow: 0 10px 25px 5px rgba(0, 0, 0, 0.5);
+                  z-index: 1;
+
+}
