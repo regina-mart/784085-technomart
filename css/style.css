@@ -109,7 +109,7 @@ a {
   fill: #6a7180;
   position: absolute;
   left: 17px;
-  top: 20px;
+  top: 21px;
   transform: translateY(-50%);
 }
 
@@ -173,7 +173,7 @@ a {
  line-height: 18px;
  color: #ffffff;
  top: 12px;
- left: 48px;
+ left: 49px;
  -webkit-transform: translateY (-50%);
  -ms-transform: translateY (-50%);
  transform: translateY (-50%);
@@ -216,8 +216,8 @@ a {
   background-color: #293449;
   width: 150px;
   padding-top: 14px;
-  padding-bottom: 14px;
-  padding-left: 17px;
+  padding-bottom: 15px;
+  padding-left: 16px;
   display: inline-block;
   text-align: center;
 
@@ -253,9 +253,9 @@ a {
 .order-basket {
   font-size: 17px;
   background-color: #293449;
-  width: 140px;
-  padding-top: 15px;
-  padding-bottom: 14px;
+  width: 141px;
+  padding-top: 14px;
+  padding-bottom: 15px;
   padding-left: 11px;
   display: inline-block;
   text-align: center;
@@ -308,8 +308,8 @@ a {
   font-size: 17px;
   background-color: #63a63e;
   width: 150px;
-  padding-top: 13px;
-  padding-bottom: 16px;
+  padding-top: 14px;
+  padding-bottom: 15px;
   display: inline-block;
   text-align: center;
 }
@@ -956,7 +956,6 @@ a {
   color: #ffffff;
   width: 620px;
   min-height: 266px;
-  padding: 20px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 
@@ -993,36 +992,36 @@ a {
 
 .catalog-slider-text-name-one,
 .catalog-slider-text-name-two {
-  font-size: 29px;
-  line-height: 20px;
+  font-size: 36px;
+  line-height: 36px;
   color: #ffffff;
   font-family: "Cuprum", Arial, sans-serif;
   margin: 0;
   text-transform: uppercase;
   padding-left: 25px;
-  padding-top: 29px;
+  padding-top: 22px;
 }
 
 .catalog-slider-text-one,
 .catalog-slider-text-two {
-  font-size: 15px;
-  line-height: 23px;
+  font-size: 18px;
+  line-height: 24px;
   color: #ffffff;
   margin: 0;
   padding-top: 10px;
-  padding-top: 11px;
-  padding-left: 22px;
+  padding-top: 2px;
+  padding-left: 25px;
 }
 
 .button-catalog-slider-one,
 .button-catalog-slider-two {
-  font-size: 12px;
-  line-height: 15px;
+  font-size: 14px;
+  line-height: 18px;
   width: 195px;
   margin-top: 122px;
   margin-left: 25px;
-  padding-top: 11px;
-  padding-bottom: 12px;
+  padding-top: 10px;
+  padding-bottom: 9px;
   padding-left: 5px;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1209,12 +1208,15 @@ a {
   padding-right: 26px;
 }
 
-.goods-block-name {
-  width: 197px;
+.goods-block-name,
+.goods-block-name-catalog {
+  width: 191px;
   text-align: center;
   margin: 0;
   padding-bottom: 12px;
-  font-size: 17px;
+  font-size: 18px;
+  line-height: 20px;
+  padding-left: 0px;
 }
 
 .goods-block-name-four {
@@ -1617,7 +1619,7 @@ a {
 .service-slider-delivery {
   width: 276px;
   padding-left: 40px;
-  display: none;
+   /* display: none; */
 }
 
  .service-slider-guarantee {
@@ -1627,7 +1629,7 @@ a {
 
 .service-slider-credit {
   width: 285px;
-  /* display: none; */
+  display: none;
 }
 
 .slider-service {
@@ -1646,6 +1648,7 @@ a {
 .specification-text {
   font-family: "PT Sans", Arial, sans-serif;
   margin: 0;
+  padding-left: 1px;
 }
 
 .service-slider-list {
@@ -1673,7 +1676,7 @@ a {
   padding-top: 15px;
   padding-right: 0;
   padding-bottom: 20px;
-  padding-left: 21px;
+  padding-left: 23px;
   border-radius: 0;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
@@ -1723,15 +1726,39 @@ a {
 }
 
 .service-slider-info-list,
-.service-caption {
+.service-caption-delivery {
   list-style: none;
   font-size: 36px;
   line-height: 36px;
   color: #32425c;
-  /* flex-wrap: wrap; или только в лист?*/
   margin: 0;
   margin-top: -3px;
+  padding-left: 1px;
+  text-transform: uppercase;
+}
 
+.service-slider-info-list,
+.service-caption-guarantee {
+  list-style: none;
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+  margin: 0;
+  margin-top: -3px;
+  padding-left: 39px;
+  text-transform: uppercase;
+}
+
+.service-slider-info-list,
+.service-caption-credit {
+  list-style: none;
+  font-size: 36px;
+  line-height: 36px;
+  color: #32425c;
+  margin: 0;
+  margin-top: -3px;
+  padding-left: 39px;
+  text-transform: uppercase;
 }
 
 .service-slider-delivery::after {
@@ -1748,7 +1775,7 @@ a {
   content: url("../img/guarantee.png");
 
   position: absolute;
-  left: 540px;
+  left: 555px;
   bottom: 0;
   width: 389px;
   height: 283px;
@@ -1758,25 +1785,52 @@ a {
   content: url("../img/credit.png");
 
   position: absolute;
-  left: 540px;
+  left: 481px;
   bottom: 0;
   width: 465px;
   height: 285px;
 }
 
-.service-slider-text {
+.service-slider-text-delivery {
   font-size: 13px;
   line-height: 24px;
   font-family: "PT Sans", Arial, sans-serif;
-
   padding-bottom: 128px;
   margin: 0;
   padding-top: 26px;
+  padding-left: 1px;
+  width: 274px;
+  text-transform: none;
+}
+
+.service-slider-text-guarantee {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
+  padding-bottom: 102px;
+  margin: 0;
+  padding-top: 26px;
+  padding-left: 39px;
+  width: 374px;
+  text-transform: none;
+}
+
+.service-slider-text-credit {
+  font-size: 13px;
+  line-height: 24px;
+  font-family: "PT Sans", Arial, sans-serif;
+  padding-bottom: 23px;
+  margin: 0;
+  padding-top: 26px;
+  padding-left: 39px;
+  width: 279px;
+  text-transform: none;
 }
 
 .service-credit-button {
   width: 195px;
-  margin-bottom: 115px;
+  margin-bottom: 109px;
+  margin-left: 38px;
 }
 
 .about-company {
@@ -2010,12 +2064,14 @@ a {
 }
 
 .price-caption {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
   font-family: "PT Sans", Arial, sans-serif;
-  margin-top: 11px;
+  margin-top: 10px;
+  margin-left: 0px;
+  margin-bottom: 16px;
 }
 
 .range-controls {
@@ -2063,7 +2119,7 @@ a {
 }
 
 .price-controls {
-	margin-bottom: 27px;
+	margin-bottom: 25px;
 	color: #000;
 }
 
@@ -2094,7 +2150,7 @@ a {
 }
 
 .manufacturer-caption {
-  font-size: 15px;
+  font-size: 17px;
   line-height: 33px;
   text-transform: uppercase;
   color: #000000;
@@ -2124,6 +2180,7 @@ input[checked] {
   line-height: 20px;
   text-transform: uppercase;
   font-family: "PT Sans", Arial, sans-serif;
+  padding-left: 1px;
 }
 
 .label-text-bosch::before {
@@ -2263,6 +2320,7 @@ input[checked] {
   text-transform: uppercase;
   font-family: "PT Sans", Arial, sans-serif;
   position: relative;
+  padding-left: 1px;
 }
 
 .radio-label-text::before {
@@ -2308,7 +2366,7 @@ input[checked] {
 }
 
 .food-caption {
-  font-size: 17px;
+  font-size: 18px;
   line-height: 30px;
   text-transform: uppercase;
   color: #000000;
@@ -2445,16 +2503,6 @@ input[radio] {
 
 .sorting-functional {
   padding-right: 46px;
-}
-
-.goods-block-name-catalog {
-  width: 197px;
-  text-align: center;
-  margin: 0;
-  padding-bottom: 10px;
-  font-size: 17px;
-  line-height: 21px;
-  font-size: 17px;
 }
 
 .puncher-one-catalog {
@@ -2682,14 +2730,14 @@ input[radio] {
       flex-wrap: wrap;
   list-style: none;
   padding: 0;
-  margin-bottom: 37px;
+  margin-bottom: 38px;
   margin-top: 29px;
 }
 
 .pagination-item-button {
   list-style: none;
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 17px;
   color: #000000;
   text-transform: uppercase;
   text-align: center;
@@ -2697,6 +2745,8 @@ input[radio] {
   width: 38px;
   border: 1px solid #e5e5e5;
   margin-right: 8px;
+  padding-top: 11px;
+  padding-bottom: 9px;
 }
 
 .button-current {
@@ -2718,7 +2768,7 @@ input[radio] {
 
 .goods-info {
   background-color: #f2f6f8;
-  padding-top: 56px;
+  padding-top: 57px;
   padding-bottom: 69px;
 }
 
